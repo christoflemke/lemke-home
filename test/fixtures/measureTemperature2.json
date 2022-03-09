@@ -1,0 +1,10 @@
+{
+  "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600464/services/TemperatureLevel",
+  "@type": "DeviceServiceData",
+  "id": "TemperatureLevel",
+  "state": {
+    "@type": "temperatureLevelState",
+    "temperature": 22.6
+  },
+  "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600464"
+}

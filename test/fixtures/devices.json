@@ -1,0 +1,496 @@
+[
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "roomClimateControl_hz_3",
+    "deviceServiceIds": [
+      "ThermostatSupportedControlMode",
+      "TemperatureLevelConfiguration",
+      "RoomClimateControl",
+      "TemperatureLevel"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_3",
+    "deviceModel": "ROOM_CLIMATE_CONTROL",
+    "serial": "roomClimateControl_hz_3",
+    "iconId": "icon_room_basement_rcc",
+    "name": "-RoomClimateControl-",
+    "status": "AVAILABLE",
+    "childDeviceIds": [
+      "hdm:HomeMaticIP:3014F711A000005BB8600763"
+    ]
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "roomLightControl_hz_7",
+    "deviceServiceIds": [
+      "BinarySwitch"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_7",
+    "deviceModel": "HUE_LIGHT_ROOM_CONTROL",
+    "serial": "roomLightControl_hz_7",
+    "name": "RoomLightControl",
+    "status": "AVAILABLE",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "roomLightControl_hz_4",
+    "deviceServiceIds": [
+      "BinarySwitch"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_4",
+    "deviceModel": "HUE_LIGHT_ROOM_CONTROL",
+    "serial": "roomLightControl_hz_4",
+    "name": "RoomLightControl",
+    "status": "UNAVAILABLE",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "intrusionDetectionSystem",
+    "deviceServiceIds": [
+      "SurveillanceAlarm",
+      "IntrusionDetectionControl"
+    ],
+    "manufacturer": "BOSCH",
+    "deviceModel": "INTRUSION_DETECTION_SYSTEM",
+    "serial": "intrusionDetectionSystem",
+    "name": "-IntrusionDetectionSystem-",
+    "status": "AVAILABLE",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+    "deviceServiceIds": [
+      "HueBlinkingActuator",
+      "MultiLevelSwitch",
+      "HueLight",
+      "BinarySwitch"
+    ],
+    "manufacturer": "PHILIPS",
+    "roomId": "hz_6",
+    "deviceModel": "HUE_LIGHT",
+    "profile": "GENERIC",
+    "iconId": "icon_philips_hue_a19",
+    "name": "Deckenfluter Flur",
+    "status": "AVAILABLE",
+    "parentDeviceId": "hdm:PhilipsHueBridge:HueBridge_0017882a77ca",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "roomClimateControl_hz_2",
+    "deviceServiceIds": [
+      "ThermostatSupportedControlMode",
+      "TemperatureLevelConfiguration",
+      "RoomClimateControl",
+      "TemperatureLevel"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_2",
+    "deviceModel": "ROOM_CLIMATE_CONTROL",
+    "serial": "roomClimateControl_hz_2",
+    "iconId": "icon_room_bathroom_rcc",
+    "name": "-RoomClimateControl-",
+    "status": "AVAILABLE",
+    "childDeviceIds": [
+      "hdm:HomeMaticIP:3014F711A000005BB8600768"
+    ]
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+    "deviceServiceIds": [
+      "HueBlinkingActuator",
+      "HSBColorActuator",
+      "HueLight",
+      "MultiLevelSwitch",
+      "BinarySwitch",
+      "HueSlowDynamics"
+    ],
+    "manufacturer": "PHILIPS",
+    "roomId": "hz_5",
+    "deviceModel": "HUE_LIGHT",
+    "profile": "GENERIC",
+    "iconId": "icon_philips_hue_a19",
+    "name": "Deckenfluter",
+    "status": "AVAILABLE",
+    "parentDeviceId": "hdm:PhilipsHueBridge:HueBridge_0017882a77ca",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "presenceSimulationService",
+    "deviceServiceIds": [
+      "PresenceSimulationScheduling",
+      "PresenceSimulationConfiguration"
+    ],
+    "manufacturer": "BOSCH",
+    "deviceModel": "PRESENCE_SIMULATION_SERVICE",
+    "serial": "presenceSimulationService",
+    "iconId": "icon_service_presence_simulation",
+    "name": "-PresenceSimulationService-",
+    "status": "AVAILABLE",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "roomLightControl_hz_5",
+    "deviceServiceIds": [
+      "BinarySwitch"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_5",
+    "deviceModel": "HUE_LIGHT_ROOM_CONTROL",
+    "serial": "roomLightControl_hz_5",
+    "name": "RoomLightControl",
+    "status": "AVAILABLE",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "deviceServiceIds": [
+      "Thermostat",
+      "BatteryLevel",
+      "ValveTappet",
+      "SilentMode",
+      "TemperatureLevel",
+      "Linking",
+      "TemperatureOffset"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_2",
+    "deviceModel": "TRV",
+    "serial": "3014F711A000005BB8600768",
+    "profile": "GENERIC",
+    "name": "Radiator thermostat 2",
+    "status": "AVAILABLE",
+    "parentDeviceId": "roomClimateControl_hz_2",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:HomeMaticIP:3014F711A000005BB8600763",
+    "deviceServiceIds": [
+      "Thermostat",
+      "BatteryLevel",
+      "ValveTappet",
+      "SilentMode",
+      "TemperatureLevel",
+      "Linking",
+      "TemperatureOffset"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_3",
+    "deviceModel": "TRV",
+    "serial": "3014F711A000005BB8600763",
+    "profile": "GENERIC",
+    "name": "Radiator thermostat 3 *",
+    "status": "AVAILABLE",
+    "parentDeviceId": "roomClimateControl_hz_3",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:HomeMaticIP:3014F711A000005BB8600464",
+    "deviceServiceIds": [
+      "Thermostat",
+      "BatteryLevel",
+      "ValveTappet",
+      "SilentMode",
+      "TemperatureLevel",
+      "Linking",
+      "TemperatureOffset"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_1",
+    "deviceModel": "TRV",
+    "serial": "3014F711A000005BB8600464",
+    "profile": "GENERIC",
+    "name": "Radiator thermostat",
+    "status": "AVAILABLE",
+    "parentDeviceId": "roomClimateControl_hz_1",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+    "deviceServiceIds": [
+      "HueBlinkingActuator",
+      "HueColorTemperature",
+      "HueLight",
+      "MultiLevelSwitch",
+      "BinarySwitch"
+    ],
+    "manufacturer": "PHILIPS",
+    "roomId": "hz_2",
+    "deviceModel": "HUE_LIGHT",
+    "profile": "GENERIC",
+    "iconId": "icon_philips_hue_a19",
+    "name": "Bad oben Decke",
+    "status": "AVAILABLE",
+    "parentDeviceId": "hdm:PhilipsHueBridge:HueBridge_0017882a77ca",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+    "deviceServiceIds": [
+      "HueBlinkingActuator",
+      "HueLight",
+      "MultiLevelSwitch",
+      "HSBColorActuator",
+      "BinarySwitch",
+      "HueSlowDynamics"
+    ],
+    "manufacturer": "PHILIPS",
+    "roomId": "hz_7",
+    "deviceModel": "HUE_LIGHT",
+    "profile": "GENERIC",
+    "iconId": "icon_philips_hue_a19",
+    "name": "Arbeitszimmer",
+    "status": "AVAILABLE",
+    "parentDeviceId": "hdm:PhilipsHueBridge:HueBridge_0017882a77ca",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "roomClimateControl_hz_1",
+    "deviceServiceIds": [
+      "ThermostatSupportedControlMode",
+      "TemperatureLevelConfiguration",
+      "RoomClimateControl",
+      "TemperatureLevel"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_1",
+    "deviceModel": "ROOM_CLIMATE_CONTROL",
+    "serial": "roomClimateControl_hz_1",
+    "iconId": "icon_room_toilet_rcc",
+    "name": "-RoomClimateControl-",
+    "status": "AVAILABLE",
+    "childDeviceIds": [
+      "hdm:HomeMaticIP:3014F711A000005BB8600464"
+    ]
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+    "deviceServiceIds": [
+      "HueBlinkingActuator",
+      "HueLight",
+      "HSBColorActuator",
+      "MultiLevelSwitch",
+      "BinarySwitch",
+      "HueSlowDynamics"
+    ],
+    "manufacturer": "PHILIPS",
+    "roomId": "hz_4",
+    "deviceModel": "HUE_LIGHT",
+    "profile": "GENERIC",
+    "iconId": "icon_philips_hue_a19",
+    "name": "Death star",
+    "status": "UNAVAILABLE",
+    "parentDeviceId": "hdm:PhilipsHueBridge:HueBridge_0017882a77ca",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:PhilipsHueBridge:HueBridge_0017882a77ca",
+    "deviceServiceIds": [
+      "HueBridge"
+    ],
+    "manufacturer": "PHILIPS",
+    "deviceModel": "HUE_BRIDGE",
+    "profile": "GENERIC",
+    "name": "Philips hue",
+    "status": "AVAILABLE",
+    "childDeviceIds": [
+      "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+      "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+      "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+      "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+      "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+      "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+      "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+      "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca"
+    ]
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "roomLightControl_hz_2",
+    "deviceServiceIds": [
+      "BinarySwitch"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_2",
+    "deviceModel": "HUE_LIGHT_ROOM_CONTROL",
+    "serial": "roomLightControl_hz_2",
+    "name": "RoomLightControl",
+    "status": "AVAILABLE",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+    "deviceServiceIds": [
+      "HueBlinkingActuator",
+      "MultiLevelSwitch",
+      "HSBColorActuator",
+      "HueLight",
+      "BinarySwitch",
+      "HueSlowDynamics"
+    ],
+    "manufacturer": "PHILIPS",
+    "roomId": "hz_5",
+    "deviceModel": "HUE_LIGHT",
+    "profile": "GENERIC",
+    "iconId": "icon_philips_hue_a19",
+    "name": "Sofa lightstrip",
+    "status": "AVAILABLE",
+    "parentDeviceId": "hdm:PhilipsHueBridge:HueBridge_0017882a77ca",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:HomeMaticIP:3014F711A000009D58589716",
+    "deviceServiceIds": [
+      "ShutterContact",
+      "BatteryLevel"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_1",
+    "deviceModel": "SWD",
+    "serial": "3014F711A000009D58589716",
+    "profile": "REGULAR_WINDOW",
+    "name": "Door/window contact",
+    "status": "AVAILABLE",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "ventilationService",
+    "deviceServiceIds": [
+      "VentilationDelay"
+    ],
+    "manufacturer": "BOSCH",
+    "deviceModel": "VENTILATION_SERVICE",
+    "serial": "ventilationService",
+    "name": "-VentilationService-",
+    "status": "AVAILABLE",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:PhilipsHueBridge:PhilipsHueBridgeManager",
+    "deviceServiceIds": [
+      "HueBridgeConnector",
+      "HueBridgeSearcher"
+    ],
+    "manufacturer": "PHILIPS",
+    "deviceModel": "HUE_BRIDGE_MANAGER",
+    "profile": "GENERIC",
+    "name": "PhilipsHueBridgeManager",
+    "status": "AVAILABLE",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+    "deviceServiceIds": [
+      "HueBlinkingActuator",
+      "HueColorTemperature",
+      "HueLight",
+      "MultiLevelSwitch",
+      "BinarySwitch"
+    ],
+    "manufacturer": "PHILIPS",
+    "roomId": "hz_2",
+    "deviceModel": "HUE_LIGHT",
+    "profile": "GENERIC",
+    "iconId": "icon_philips_hue_a19",
+    "name": "Bad oben Decke 2",
+    "status": "AVAILABLE",
+    "parentDeviceId": "hdm:PhilipsHueBridge:HueBridge_0017882a77ca",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:HomeMaticIP:3014F711A000009D585895B0",
+    "deviceServiceIds": [
+      "ShutterContact",
+      "BatteryLevel"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_2",
+    "deviceModel": "SWD",
+    "serial": "3014F711A000009D585895B0",
+    "profile": "REGULAR_WINDOW",
+    "name": "Door/window contact 2",
+    "status": "AVAILABLE",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+    "deviceServiceIds": [
+      "HueBlinkingActuator",
+      "MultiLevelSwitch",
+      "HueLight",
+      "BinarySwitch"
+    ],
+    "manufacturer": "PHILIPS",
+    "roomId": "hz_2",
+    "deviceModel": "HUE_LIGHT",
+    "profile": "GENERIC",
+    "iconId": "icon_philips_hue_a19",
+    "name": "Bad Schrank",
+    "status": "AVAILABLE",
+    "parentDeviceId": "hdm:PhilipsHueBridge:HueBridge_0017882a77ca",
+    "childDeviceIds": []
+  },
+  {
+    "@type": "device",
+    "rootDeviceId": "64-da-a0-10-0a-70",
+    "id": "roomLightControl_hz_6",
+    "deviceServiceIds": [
+      "BinarySwitch"
+    ],
+    "manufacturer": "BOSCH",
+    "roomId": "hz_6",
+    "deviceModel": "HUE_LIGHT_ROOM_CONTROL",
+    "serial": "roomLightControl_hz_6",
+    "name": "RoomLightControl",
+    "status": "AVAILABLE",
+    "childDeviceIds": []
+  }
+]

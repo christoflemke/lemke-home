@@ -1,0 +1,36 @@
+{
+  "name": "poll-bosch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test*.js",
+    "lint:fix": "ts-standard --fix",
+    "lint": "ts-standard",
+    "pretest": "npm run lint:fix && tsc"
+  },
+  "author": "Christof Lemke <christoflemke@npmjs.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^14.18.12",
+    "axios": "^0.26.0",
+    "getconfig": "^4.5.0",
+    "influx": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/chai": "^4.3.0",
+    "@types/chai-as-promised": "^7.1.5",
+    "@types/mocha": "^9.1.0",
+    "chai": "^4.3.6",
+    "chai-as-promised": "^7.1.1",
+    "mocha": "^9.2.1",
+    "nock": "^13.2.4",
+    "ts-standard": "^11.0.0",
+    "typescript": "^4.6.2"
+  },
+  "ts-standard": {
+    "env": [
+      "mocha"
+    ]
+  }
+}

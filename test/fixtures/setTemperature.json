@@ -1,0 +1,209 @@
+{
+  "path": "/devices/roomClimateControl_hz_1/services/RoomClimateControl",
+  "operations": [
+    "incrementSetpointTemperature",
+    "decrementSetpointTemperature"
+  ],
+  "@type": "DeviceServiceData",
+  "id": "RoomClimateControl",
+  "state": {
+    "schedule": {
+      "profiles": [
+        {
+          "switchPoints": [
+            {
+              "startTimeMinutes": 0,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            },
+            {
+              "startTimeMinutes": 360,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "COMFORT"
+              }
+            },
+            {
+              "startTimeMinutes": 1380,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            }
+          ],
+          "day": "MONDAY"
+        },
+        {
+          "switchPoints": [
+            {
+              "startTimeMinutes": 0,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            },
+            {
+              "startTimeMinutes": 360,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "COMFORT"
+              }
+            },
+            {
+              "startTimeMinutes": 1380,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            }
+          ],
+          "day": "TUESDAY"
+        },
+        {
+          "switchPoints": [
+            {
+              "startTimeMinutes": 0,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            },
+            {
+              "startTimeMinutes": 360,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "COMFORT"
+              }
+            },
+            {
+              "startTimeMinutes": 1380,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            }
+          ],
+          "day": "WEDNESDAY"
+        },
+        {
+          "switchPoints": [
+            {
+              "startTimeMinutes": 0,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            },
+            {
+              "startTimeMinutes": 360,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "COMFORT"
+              }
+            },
+            {
+              "startTimeMinutes": 1380,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            }
+          ],
+          "day": "THURSDAY"
+        },
+        {
+          "switchPoints": [
+            {
+              "startTimeMinutes": 0,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            },
+            {
+              "startTimeMinutes": 360,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "COMFORT"
+              }
+            },
+            {
+              "startTimeMinutes": 1380,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            }
+          ],
+          "day": "FRIDAY"
+        },
+        {
+          "switchPoints": [
+            {
+              "startTimeMinutes": 0,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            },
+            {
+              "startTimeMinutes": 360,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "COMFORT"
+              }
+            },
+            {
+              "startTimeMinutes": 1380,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            }
+          ],
+          "day": "SATURDAY"
+        },
+        {
+          "switchPoints": [
+            {
+              "startTimeMinutes": 0,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            },
+            {
+              "startTimeMinutes": 360,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "COMFORT"
+              }
+            },
+            {
+              "startTimeMinutes": 1380,
+              "value": {
+                "@type": "temperatureLevelSwitchPointValue",
+                "temperatureLevel": "ECO"
+              }
+            }
+          ],
+          "day": "SUNDAY"
+        }
+      ]
+    },
+    "operationMode": "AUTOMATIC",
+    "summerMode": false,
+    "low": false,
+    "@type": "climateControlState",
+    "setpointTemperature": 21,
+    "setpointTemperatureForLevelEco": 17,
+    "setpointTemperatureForLevelComfort": 21,
+    "ventilationMode": false,
+    "roomControlMode": "HEATING",
+    "boostMode": false,
+    "supportsBoostMode": true
+  },
+  "deviceId": "roomClimateControl_hz_1"
+}

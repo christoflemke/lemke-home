@@ -1,0 +1,44 @@
+[
+  {
+    "@type": "room",
+    "id": "hz_3",
+    "iconId": "icon_room_basement",
+    "name": "Treppenhaus"
+  },
+  {
+    "@type": "room",
+    "id": "hz_7",
+    "iconId": "icon_room_office",
+    "name": "Arbeitszimmer"
+  },
+  {
+    "@type": "room",
+    "id": "hz_1",
+    "iconId": "icon_room_toilet",
+    "name": "Bad unten"
+  },
+  {
+    "@type": "room",
+    "id": "hz_6",
+    "iconId": "icon_room_attire",
+    "name": "Flur"
+  },
+  {
+    "@type": "room",
+    "id": "hz_4",
+    "iconId": "icon_room_kitchen",
+    "name": "Küche"
+  },
+  {
+    "@type": "room",
+    "id": "hz_5",
+    "iconId": "icon_room_living_room",
+    "name": "Stube"
+  },
+  {
+    "@type": "room",
+    "id": "hz_2",
+    "iconId": "icon_room_bathroom",
+    "name": "Bad oben"
+  }
+]

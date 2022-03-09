@@ -1,0 +1,71 @@
+[
+  {
+    "@type": "DeviceServiceData",
+    "id": "Linking",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "linkingState"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/Linking"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "SilentMode",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "silentModeState",
+      "mode": "MODE_NORMAL"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/SilentMode"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureLevel",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "temperatureLevelState",
+      "temperature": 23.0
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/TemperatureLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "ValveTappet",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "valveTappetState",
+      "value": "VALVE_ADAPTION_SUCCESSFUL",
+      "position": 0
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/ValveTappet"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BatteryLevel",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/BatteryLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureOffset",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "temperatureOffsetState",
+      "offset": 0.0,
+      "stepSize": 0.1,
+      "minOffset": -3.5,
+      "maxOffset": 3.5
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/TemperatureOffset"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "Thermostat",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "childLockState",
+      "childLock": "OFF"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/Thermostat"
+  }
+]
