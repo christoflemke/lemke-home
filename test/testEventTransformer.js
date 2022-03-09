@@ -1,5 +1,5 @@
 const fs = require('fs')
-const eventTransformer = require('../lib/eventTransform')
+const eventTransformer = require('../lib/bosch/eventTransform')
 const expect = require('chai').expect
 const path = require('path')
 

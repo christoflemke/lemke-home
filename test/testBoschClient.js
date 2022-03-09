@@ -1,5 +1,5 @@
 const nock = require('nock')
-const boschClient = require('../lib/boschClient')
+const boschClient = require('../lib/bosch/boschClient')
 const expect = require('chai').expect
 const baseUrl = 'https://192.168.87.106:8444'
 nock.disableNetConnect()
