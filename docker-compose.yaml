@@ -1,5 +1,11 @@
 version: '2'
 services:
+
+  poll:
+    build:
+      context: .
+    image: node-poll
+
   influxdb:
     image: influxdb:1.7.11
     ports:
