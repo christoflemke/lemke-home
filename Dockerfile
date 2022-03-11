@@ -1,8 +1,7 @@
 FROM node:14-stretch AS node_modules
 RUN mkdir /app
 WORKDIR /app
-ADD package.json .
-ADD package-lock.json .
+COPY package*.json /app/
 RUN npm ci
 
 FROM node:14-stretch
