@@ -15,6 +15,14 @@
           "type": "dashboard"
         },
         "type": "dashboard"
+      },
+      {
+        "enable": true,
+        "iconColor": "red",
+        "name": "Window Sensor",
+        "query": "select title, value from ShutterContact",
+        "tagsColumn": "roomName",
+        "textColumn": ""
       }
     ]
   },
@@ -670,13 +678,13 @@
     "list": []
   },
   "time": {
-    "from": "now-1h",
+    "from": "now-5m",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "BoschTemp",
   "uid": "-FErpwYnzsa",
-  "version": 4,
+  "version": 6,
   "weekStart": ""
 }
