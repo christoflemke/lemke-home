@@ -8,8 +8,6 @@ services:
 
   influxdb:
     image: influxdb:1.7.11
-    ports:
-      - '8086:8086'
     volumes:
       - influxdb-storage:/var/lib/influxdb
     environment:
@@ -20,7 +18,7 @@ services:
   grafana:
     image: grafana/grafana:8.4.3
     ports:
-      - '3000:3000'
+      - '127.0.0.1:1337:3000'
     volumes:
       - grafana-storage:/var/lib/grafana
       - ./grafana-provisioning/:/etc/grafana/provisioning
