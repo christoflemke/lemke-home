@@ -18,7 +18,7 @@ services:
       - INFLUXDB_ADMIN_PASSWORD=${INFLUX_PASSWORD}
 
   grafana:
-    image: grafana/grafana@sha256:32fb8dc203c770b23befb53147c9984bf36a215d7cff66eec0aaa9911fd3df40
+    image: grafana/grafana:8.4.3
     ports:
       - '3000:3000'
     volumes:
