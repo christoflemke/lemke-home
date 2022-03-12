@@ -6,8 +6,7 @@ const { expect } = require('chai')
 const fixture = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures', 'airthings.json')).toString())
 
 describe('airthingsParser', function () {
-
-  function testValue(measurement, room, expected) {
+  function testValue (measurement, room, expected) {
     const temperature = parser
       .toInfluxEvents(fixture)
       .find(e => e.measurement === measurement && e?.tags?.room === room)

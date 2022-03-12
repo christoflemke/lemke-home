@@ -1,0 +1,2217 @@
+[
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "roomLightControl_hz_2",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/roomLightControl_hz_2/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "ThermostatSupportedControlMode",
+    "deviceId": "roomClimateControl_hz_2",
+    "state": {
+      "@type": "thermostatSupportedControlModeState",
+      "supportedControlModes": [
+        "HEATING",
+        "OFF"
+      ]
+    },
+    "path": "/devices/roomClimateControl_hz_2/services/ThermostatSupportedControlMode"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureLevelConfiguration",
+    "deviceId": "roomClimateControl_hz_2",
+    "state": {
+      "@type": "temperatureLevelConfigurationState",
+      "sensors": [
+        {
+          "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+          "active": true
+        }
+      ]
+    },
+    "path": "/devices/roomClimateControl_hz_2/services/TemperatureLevelConfiguration"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "RoomClimateControl",
+    "deviceId": "roomClimateControl_hz_2",
+    "state": {
+      "@type": "climateControlState",
+      "operationMode": "AUTOMATIC",
+      "setpointTemperature": 21.0,
+      "setpointTemperatureForLevelEco": 17.0,
+      "setpointTemperatureForLevelComfort": 21.0,
+      "schedule": {
+        "profiles": [
+          {
+            "day": "MONDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1390,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "TUESDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1390,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "WEDNESDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1390,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "THURSDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1390,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "FRIDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1390,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "SATURDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1390,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "SUNDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1390,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "ventilationMode": false,
+      "low": false,
+      "boostMode": false,
+      "summerMode": false,
+      "supportsBoostMode": true,
+      "roomControlMode": "HEATING"
+    },
+    "operations": [
+      "incrementSetpointTemperature",
+      "decrementSetpointTemperature"
+    ],
+    "path": "/devices/roomClimateControl_hz_2/services/RoomClimateControl"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureLevel",
+    "deviceId": "roomClimateControl_hz_2",
+    "state": {
+      "@type": "temperatureLevelState",
+      "temperature": 23.4
+    },
+    "path": "/devices/roomClimateControl_hz_2/services/TemperatureLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "SurveillanceAlarm",
+    "deviceId": "intrusionDetectionSystem",
+    "state": {
+      "@type": "surveillanceAlarmState",
+      "value": "ALARM_OFF",
+      "incidents": []
+    },
+    "path": "/devices/intrusionDetectionSystem/services/SurveillanceAlarm"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "IntrusionDetectionControl",
+    "deviceId": "intrusionDetectionSystem",
+    "state": {
+      "@type": "intrusionDetectionControlState",
+      "value": "SYSTEM_DISARMED",
+      "activeProfile": "0",
+      "triggers": [
+        {
+          "id": "hdm:HomeMaticIP:3014F711A000009D58589716",
+          "active": true,
+          "readonly": false
+        },
+        {
+          "id": "hdm:HomeMaticIP:3014F711A000009D585895B0",
+          "active": true,
+          "readonly": false
+        }
+      ],
+      "actuators": [
+        {
+          "id": "intrusion:visual",
+          "active": true,
+          "readonly": false
+        }
+      ],
+      "armActivationDelayTime": 30,
+      "alarmActivationDelayTime": 30
+    },
+    "path": "/devices/intrusionDetectionSystem/services/IntrusionDetectionControl"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "MultiLevelSwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+    "state": {
+      "@type": "multiLevelSwitchState",
+      "level": 1
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca/services/MultiLevelSwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueBlinkingActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+    "state": {
+      "@type": "hueBlinkingState",
+      "blinkingState": "UNKNOWN"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca/services/HueBlinkingActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueLight",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+    "state": {
+      "@type": "hueModelNumberState",
+      "modelNumber": "LWA011"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca/services/HueLight"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "roomLightControl_hz_7",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/roomLightControl_hz_7/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueLight",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+    "state": {
+      "@type": "hueModelNumberState",
+      "modelNumber": "LCT007"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca/services/HueLight"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "MultiLevelSwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+    "state": {
+      "@type": "multiLevelSwitchState",
+      "level": 66
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca/services/MultiLevelSwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HSBColorActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+    "state": {
+      "@type": "colorState",
+      "rgb": -16812,
+      "gamut": "HUE_GAMUT_B",
+      "colorTemperatureRange": {
+        "minCt": 153,
+        "maxCt": 500
+      }
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca/services/HSBColorActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueSlowDynamics",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+    "state": {
+      "@type": "hueSlowDynamicsState",
+      "state": "IDLE",
+      "preset": "NOT_SET",
+      "brightness": 0
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca/services/HueSlowDynamics"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueBlinkingActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+    "state": {
+      "@type": "hueBlinkingState",
+      "blinkingState": "UNKNOWN"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca/services/HueBlinkingActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "PresenceSimulationScheduling",
+    "deviceId": "presenceSimulationService",
+    "state": {
+      "@type": "presenceSimulationSchedulingState",
+      "schedule": [
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-13T18:08:48Z",
+          "endTime": "2022-03-13T18:24:32Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-13T18:57:16Z",
+          "endTime": "2022-03-13T19:02:36Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-13T19:44:49Z",
+          "endTime": "2022-03-13T20:13:31Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-13T20:49:42Z",
+          "endTime": "2022-03-13T21:20:12Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-13T21:32:10Z",
+          "endTime": "2022-03-13T22:23:51Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-14T04:30:04Z",
+          "endTime": "2022-03-14T05:25:43Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+          "startTime": "2022-03-13T18:25:31Z",
+          "endTime": "2022-03-13T18:34:27Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+          "startTime": "2022-03-13T19:19:24Z",
+          "endTime": "2022-03-13T20:02:41Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+          "startTime": "2022-03-13T21:02:03Z",
+          "endTime": "2022-03-13T21:26:39Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+          "startTime": "2022-03-13T21:47:56Z",
+          "endTime": "2022-03-13T22:15:27Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+          "startTime": "2022-03-14T04:27:24Z",
+          "endTime": "2022-03-14T05:25:05Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-13T18:02:11Z",
+          "endTime": "2022-03-13T18:36:27Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-13T18:54:55Z",
+          "endTime": "2022-03-13T19:48:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-13T20:01:12Z",
+          "endTime": "2022-03-13T20:48:57Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-13T21:38:33Z",
+          "endTime": "2022-03-13T22:37:55Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-14T04:16:51Z",
+          "endTime": "2022-03-14T05:10:26Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-14T05:28:58Z",
+          "endTime": "2022-03-14T05:34:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-13T17:33:30Z",
+          "endTime": "2022-03-13T17:56:38Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-13T18:39:45Z",
+          "endTime": "2022-03-13T18:59:01Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-13T19:36:45Z",
+          "endTime": "2022-03-13T20:04:59Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-13T20:42:42Z",
+          "endTime": "2022-03-13T21:07:37Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-13T21:23:41Z",
+          "endTime": "2022-03-13T21:49:44Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-14T04:20:08Z",
+          "endTime": "2022-03-14T04:45:42Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-14T05:03:18Z",
+          "endTime": "2022-03-14T05:16:26Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-13T18:30:56Z",
+          "endTime": "2022-03-13T18:47:07Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-13T18:52:40Z",
+          "endTime": "2022-03-13T19:03:07Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-13T19:36:16Z",
+          "endTime": "2022-03-13T20:15:34Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-13T20:38:54Z",
+          "endTime": "2022-03-13T21:35:23Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-13T21:46:31Z",
+          "endTime": "2022-03-13T22:09:57Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-14T04:24:06Z",
+          "endTime": "2022-03-14T04:40:12Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-14T05:10:15Z",
+          "endTime": "2022-03-14T05:34:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-13T17:48:48Z",
+          "endTime": "2022-03-13T18:36:14Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-13T19:09:45Z",
+          "endTime": "2022-03-13T19:51:59Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-13T20:00:49Z",
+          "endTime": "2022-03-13T20:30:49Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-13T20:41:32Z",
+          "endTime": "2022-03-13T21:26:33Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-13T21:50:18Z",
+          "endTime": "2022-03-13T22:29:16Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-14T04:24:07Z",
+          "endTime": "2022-03-14T04:34:02Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-14T05:03:30Z",
+          "endTime": "2022-03-14T05:12:05Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-14T05:21:07Z",
+          "endTime": "2022-03-14T05:34:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-13T17:35:53Z",
+          "endTime": "2022-03-13T17:51:49Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-13T18:27:18Z",
+          "endTime": "2022-03-13T19:20:21Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-13T19:44:29Z",
+          "endTime": "2022-03-13T20:20:12Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-13T20:43:01Z",
+          "endTime": "2022-03-13T21:02:49Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-13T21:13:13Z",
+          "endTime": "2022-03-13T21:39:32Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-13T21:57:02Z",
+          "endTime": "2022-03-13T22:06:21Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-14T04:12:56Z",
+          "endTime": "2022-03-14T04:45:02Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-14T05:11:20Z",
+          "endTime": "2022-03-14T05:30:31Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-13T17:37:26Z",
+          "endTime": "2022-03-13T18:36:10Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-13T19:07:31Z",
+          "endTime": "2022-03-13T19:58:53Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-13T20:16:28Z",
+          "endTime": "2022-03-13T20:47:43Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-13T20:57:13Z",
+          "endTime": "2022-03-13T21:40:55Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-14T05:14:23Z",
+          "endTime": "2022-03-14T05:34:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-12T05:18:06Z",
+          "endTime": "2022-03-12T05:50:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-12T05:40:52Z",
+          "endTime": "2022-03-12T05:50:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-12T05:35:12Z",
+          "endTime": "2022-03-12T05:50:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-12T05:23:25Z",
+          "endTime": "2022-03-12T05:50:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-12T05:13:59Z",
+          "endTime": "2022-03-12T05:50:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-12T17:20:06Z",
+          "endTime": "2022-03-12T17:37:34Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-12T17:47:53Z",
+          "endTime": "2022-03-12T18:22:51Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-12T18:58:28Z",
+          "endTime": "2022-03-12T19:20:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-12T19:30:43Z",
+          "endTime": "2022-03-12T19:48:01Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-12T20:02:29Z",
+          "endTime": "2022-03-12T20:25:43Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-12T20:56:47Z",
+          "endTime": "2022-03-12T21:52:22Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-13T04:43:58Z",
+          "endTime": "2022-03-13T04:51:13Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "startTime": "2022-03-13T05:06:47Z",
+          "endTime": "2022-03-13T05:49:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+          "startTime": "2022-03-12T17:35:46Z",
+          "endTime": "2022-03-12T18:16:15Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+          "startTime": "2022-03-12T19:15:34Z",
+          "endTime": "2022-03-12T20:00:45Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+          "startTime": "2022-03-12T20:58:18Z",
+          "endTime": "2022-03-12T21:33:44Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+          "startTime": "2022-03-13T04:28:34Z",
+          "endTime": "2022-03-13T04:46:27Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+          "startTime": "2022-03-13T05:14:03Z",
+          "endTime": "2022-03-13T05:30:48Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-12T17:29:02Z",
+          "endTime": "2022-03-12T17:57:33Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-12T18:36:19Z",
+          "endTime": "2022-03-12T19:09:23Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-12T19:58:32Z",
+          "endTime": "2022-03-12T20:21:59Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-12T20:57:10Z",
+          "endTime": "2022-03-12T21:31:52Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "startTime": "2022-03-13T05:01:17Z",
+          "endTime": "2022-03-13T05:49:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-12T17:32:34Z",
+          "endTime": "2022-03-12T18:29:45Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-12T19:28:37Z",
+          "endTime": "2022-03-12T19:39:32Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-12T20:19:18Z",
+          "endTime": "2022-03-12T21:05:18Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-12T21:26:20Z",
+          "endTime": "2022-03-12T22:22:31Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "startTime": "2022-03-13T05:18:46Z",
+          "endTime": "2022-03-13T05:49:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-12T17:05:48Z",
+          "endTime": "2022-03-12T17:46:20Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-12T18:18:03Z",
+          "endTime": "2022-03-12T18:57:02Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-12T19:34:44Z",
+          "endTime": "2022-03-12T20:24:47Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-12T21:19:03Z",
+          "endTime": "2022-03-12T21:44:23Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-13T04:17:02Z",
+          "endTime": "2022-03-13T04:43:37Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "startTime": "2022-03-13T05:10:37Z",
+          "endTime": "2022-03-13T05:49:00Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-12T17:01:35Z",
+          "endTime": "2022-03-12T17:40:32Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-12T18:38:06Z",
+          "endTime": "2022-03-12T19:04:32Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-12T19:37:41Z",
+          "endTime": "2022-03-12T20:31:05Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-12T20:39:43Z",
+          "endTime": "2022-03-12T21:13:42Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-12T21:48:46Z",
+          "endTime": "2022-03-12T22:36:30Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "startTime": "2022-03-13T05:09:44Z",
+          "endTime": "2022-03-13T05:18:56Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-12T16:57:52Z",
+          "endTime": "2022-03-12T17:41:07Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-12T18:06:50Z",
+          "endTime": "2022-03-12T18:30:27Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-12T19:10:14Z",
+          "endTime": "2022-03-12T19:28:21Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-12T19:44:39Z",
+          "endTime": "2022-03-12T20:09:19Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-12T20:44:11Z",
+          "endTime": "2022-03-12T21:02:23Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-12T21:27:36Z",
+          "endTime": "2022-03-12T21:52:48Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-13T04:12:10Z",
+          "endTime": "2022-03-13T04:30:24Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "startTime": "2022-03-13T04:54:48Z",
+          "endTime": "2022-03-13T05:29:40Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-12T16:49:01Z",
+          "endTime": "2022-03-12T17:09:25Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-12T17:42:12Z",
+          "endTime": "2022-03-12T18:39:24Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-12T19:36:01Z",
+          "endTime": "2022-03-12T20:28:36Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-12T20:36:32Z",
+          "endTime": "2022-03-12T21:02:15Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-12T21:52:20Z",
+          "endTime": "2022-03-12T22:26:42Z"
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "startTime": "2022-03-13T04:31:13Z",
+          "endTime": "2022-03-13T04:57:37Z"
+        }
+      ]
+    },
+    "path": "/devices/presenceSimulationService/services/PresenceSimulationScheduling"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "PresenceSimulationConfiguration",
+    "deviceId": "presenceSimulationService",
+    "state": {
+      "@type": "presenceSimulationConfigurationState",
+      "enabled": false,
+      "devices": [
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+          "active": true
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+          "active": true
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a693c-0b_0017882a77ca",
+          "active": true
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+          "active": true
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+          "active": true
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+          "active": true
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+          "active": true
+        },
+        {
+          "deviceId": "hdm:PhilipsHueBridge:HueLight_001788010b2ab2a2-0b_0017882a77ca",
+          "active": true
+        }
+      ],
+      "runningStartTime": "-",
+      "runningEndTime": "-"
+    },
+    "path": "/devices/presenceSimulationService/services/PresenceSimulationConfiguration"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "SoftwareUpdate",
+    "deviceId": "64-da-a0-10-0a-70",
+    "state": {
+      "@type": "softwareUpdateState",
+      "swUpdateState": "NO_UPDATE_AVAILABLE",
+      "swUpdateLastResult": "UPDATE_SUCCESS",
+      "swUpdateAvailableVersion": "",
+      "swInstalledVersion": "10.6.2365-23746",
+      "swActivationDate": {
+        "@type": "softwareActivationDate",
+        "timeout": 604800000
+      },
+      "automaticUpdatesEnabled": true
+    },
+    "path": "/system/services/SoftwareUpdate"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "RemoteAccess",
+    "deviceId": "64-da-a0-10-0a-70",
+    "state": {
+      "@type": "remoteAccessState",
+      "state": "ENABLED"
+    },
+    "path": "/system/services/RemoteAccess"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "RemotePushNotification",
+    "deviceId": "64-da-a0-10-0a-70",
+    "state": {
+      "@type": "remotePushNotificationState",
+      "state": "ENABLED"
+    },
+    "path": "/system/services/RemotePushNotification"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "ArmDisarmPushNotification",
+    "deviceId": "64-da-a0-10-0a-70",
+    "state": {
+      "@type": "armDisarmPushNotificationState",
+      "state": "ENABLED"
+    },
+    "path": "/system/services/ArmDisarmPushNotification"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureOffset",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "temperatureOffsetState",
+      "offset": 0.0,
+      "stepSize": 0.1,
+      "minOffset": -3.5,
+      "maxOffset": 3.5
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/TemperatureOffset"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "Linking",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "linkingState"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/Linking"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "SilentMode",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "silentModeState",
+      "mode": "MODE_NORMAL"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/SilentMode"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BatteryLevel",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/BatteryLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "ValveTappet",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "valveTappetState",
+      "value": "VALVE_ADAPTION_SUCCESSFUL",
+      "position": 0
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/ValveTappet"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureLevel",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "temperatureLevelState",
+      "temperature": 23.4
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/TemperatureLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "Thermostat",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600768",
+    "state": {
+      "@type": "childLockState",
+      "childLock": "OFF"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600768/services/Thermostat"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "VentilationDelay",
+    "deviceId": "ventilationService",
+    "state": {
+      "@type": "ventilationDelayState",
+      "devices": [
+        {
+          "active": true,
+          "deviceId": "hdm:HomeMaticIP:3014F711A000009D58589716"
+        },
+        {
+          "active": true,
+          "deviceId": "hdm:HomeMaticIP:3014F711A000009D585895B0"
+        }
+      ],
+      "delay": 0
+    },
+    "path": "/devices/ventilationService/services/VentilationDelay"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureOffset",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600763",
+    "state": {
+      "@type": "temperatureOffsetState",
+      "offset": 0.0,
+      "stepSize": 0.1,
+      "minOffset": -3.5,
+      "maxOffset": 3.5
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600763/services/TemperatureOffset"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "ValveTappet",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600763",
+    "state": {
+      "@type": "valveTappetState",
+      "value": "VALVE_ADAPTION_SUCCESSFUL",
+      "position": 5
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600763/services/ValveTappet"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureLevel",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600763",
+    "state": {
+      "@type": "temperatureLevelState",
+      "temperature": 23.0
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600763/services/TemperatureLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "Linking",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600763",
+    "state": {
+      "@type": "linkingState"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600763/services/Linking"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "Thermostat",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600763",
+    "state": {
+      "@type": "childLockState",
+      "childLock": "OFF"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600763/services/Thermostat"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BatteryLevel",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600763",
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600763/services/BatteryLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "SilentMode",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600763",
+    "state": {
+      "@type": "silentModeState",
+      "mode": "MODE_NORMAL"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600763/services/SilentMode"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureLevel",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600464",
+    "state": {
+      "@type": "temperatureLevelState",
+      "temperature": 23.4
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600464/services/TemperatureLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "Thermostat",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600464",
+    "state": {
+      "@type": "childLockState",
+      "childLock": "OFF"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600464/services/Thermostat"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "ValveTappet",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600464",
+    "state": {
+      "@type": "valveTappetState",
+      "value": "VALVE_ADAPTION_SUCCESSFUL",
+      "position": 0
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600464/services/ValveTappet"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BatteryLevel",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600464",
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600464/services/BatteryLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureOffset",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600464",
+    "state": {
+      "@type": "temperatureOffsetState",
+      "offset": 0.0,
+      "stepSize": 0.1,
+      "minOffset": -3.5,
+      "maxOffset": 3.5
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600464/services/TemperatureOffset"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "SilentMode",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600464",
+    "state": {
+      "@type": "silentModeState",
+      "mode": "MODE_NORMAL"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600464/services/SilentMode"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "Linking",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600464",
+    "state": {
+      "@type": "linkingState"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000005BB8600464/services/Linking"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueBlinkingActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+    "state": {
+      "@type": "hueBlinkingState",
+      "blinkingState": "UNKNOWN"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca/services/HueBlinkingActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueLight",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+    "state": {
+      "@type": "hueModelNumberState",
+      "modelNumber": "TRADFRI bulb E27 WS opal 1000lm"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca/services/HueLight"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "MultiLevelSwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+    "state": {
+      "@type": "multiLevelSwitchState",
+      "level": 1
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca/services/MultiLevelSwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueColorTemperature",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca",
+    "state": {
+      "@type": "colorTemperatureState",
+      "colorTemperature": 303,
+      "colorTemperatureRange": {
+        "minCt": 250,
+        "maxCt": 454
+      }
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_847127fffe504ecf-01_0017882a77ca/services/HueColorTemperature"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueBlinkingActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+    "state": {
+      "@type": "hueBlinkingState",
+      "blinkingState": "UNKNOWN"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca/services/HueBlinkingActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueSlowDynamics",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+    "state": {
+      "@type": "hueSlowDynamicsState",
+      "state": "IDLE",
+      "preset": "NOT_SET",
+      "brightness": 0
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca/services/HueSlowDynamics"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueLight",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+    "state": {
+      "@type": "hueModelNumberState",
+      "modelNumber": "LCT007"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca/services/HueLight"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "MultiLevelSwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+    "state": {
+      "@type": "multiLevelSwitchState",
+      "level": 57
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca/services/MultiLevelSwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HSBColorActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca",
+    "state": {
+      "@type": "colorState",
+      "rgb": -16812,
+      "gamut": "HUE_GAMUT_B",
+      "colorTemperatureRange": {
+        "minCt": 153,
+        "maxCt": 500
+      }
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a736b-0b_0017882a77ca/services/HSBColorActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "roomLightControl_hz_6",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/roomLightControl_hz_6/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueBlinkingActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+    "state": {
+      "@type": "hueBlinkingState",
+      "blinkingState": "UNKNOWN"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca/services/HueBlinkingActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "MultiLevelSwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+    "state": {
+      "@type": "multiLevelSwitchState",
+      "level": 100
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca/services/MultiLevelSwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueLight",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+    "state": {
+      "@type": "hueModelNumberState",
+      "modelNumber": "LCT007"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca/services/HueLight"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": true
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueSlowDynamics",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+    "state": {
+      "@type": "hueSlowDynamicsState",
+      "state": "IDLE",
+      "preset": "NOT_SET",
+      "brightness": 0
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca/services/HueSlowDynamics"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HSBColorActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca",
+    "state": {
+      "@type": "colorState",
+      "rgb": -12168,
+      "gamut": "HUE_GAMUT_B",
+      "colorTemperatureRange": {
+        "minCt": 153,
+        "maxCt": 500
+      }
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_00178801102a7403-0b_0017882a77ca/services/HSBColorActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueBridge",
+    "deviceId": "hdm:PhilipsHueBridge:HueBridge_0017882a77ca",
+    "state": {
+      "@type": "hueBridgeNetworkState",
+      "ip": "192.168.87.124",
+      "mac": "00:17:88:2a:77:ca"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueBridge_0017882a77ca/services/HueBridge"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueBlinkingActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+    "state": {
+      "@type": "hueBlinkingState",
+      "blinkingState": "UNKNOWN"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca/services/HueBlinkingActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueSlowDynamics",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+    "state": {
+      "@type": "hueSlowDynamicsState",
+      "state": "IDLE",
+      "preset": "NOT_SET",
+      "brightness": 0
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca/services/HueSlowDynamics"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "MultiLevelSwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+    "state": {
+      "@type": "multiLevelSwitchState",
+      "level": 67
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca/services/MultiLevelSwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueLight",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+    "state": {
+      "@type": "hueModelNumberState",
+      "modelNumber": "LCL001"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca/services/HueLight"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HSBColorActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+    "state": {
+      "@type": "colorState",
+      "rgb": -16812,
+      "gamut": "HUE_GAMUT_C",
+      "colorTemperatureRange": {
+        "minCt": 153,
+        "maxCt": 500
+      }
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca/services/HSBColorActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_0017880109be2fe8-0b_0017882a77ca/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BatteryLevel",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000009D58589716",
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000009D58589716/services/BatteryLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "ShutterContact",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000009D58589716",
+    "state": {
+      "@type": "shutterContactState",
+      "value": "CLOSED"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000009D58589716/services/ShutterContact"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "roomLightControl_hz_4",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/roomLightControl_hz_4/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "roomLightControl_hz_5",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/roomLightControl_hz_5/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueBridgeSearcher",
+    "deviceId": "hdm:PhilipsHueBridge:PhilipsHueBridgeManager",
+    "state": {
+      "@type": "hueBridgeSearcherState",
+      "searcherState": "NO_BRIDGE_FOUND",
+      "value": "NO_BRIDGE_FOUND"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:PhilipsHueBridgeManager/services/HueBridgeSearcher"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueBridgeConnector",
+    "deviceId": "hdm:PhilipsHueBridge:PhilipsHueBridgeManager",
+    "state": {
+      "@type": "hueBridgeConnectorState"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:PhilipsHueBridgeManager/services/HueBridgeConnector"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "ThermostatSupportedControlMode",
+    "deviceId": "roomClimateControl_hz_3",
+    "state": {
+      "@type": "thermostatSupportedControlModeState",
+      "supportedControlModes": [
+        "HEATING",
+        "OFF"
+      ]
+    },
+    "path": "/devices/roomClimateControl_hz_3/services/ThermostatSupportedControlMode"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureLevelConfiguration",
+    "deviceId": "roomClimateControl_hz_3",
+    "state": {
+      "@type": "temperatureLevelConfigurationState",
+      "sensors": [
+        {
+          "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600763",
+          "active": true
+        }
+      ]
+    },
+    "path": "/devices/roomClimateControl_hz_3/services/TemperatureLevelConfiguration"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "RoomClimateControl",
+    "deviceId": "roomClimateControl_hz_3",
+    "state": {
+      "@type": "climateControlState",
+      "operationMode": "AUTOMATIC",
+      "setpointTemperature": 21.0,
+      "setpointTemperatureForLevelEco": 17.0,
+      "setpointTemperatureForLevelComfort": 21.0,
+      "schedule": {
+        "profiles": [
+          {
+            "day": "MONDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "TUESDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "WEDNESDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "THURSDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "FRIDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "SATURDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "SUNDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "ventilationMode": false,
+      "low": false,
+      "boostMode": false,
+      "summerMode": false,
+      "supportsBoostMode": true,
+      "roomControlMode": "HEATING"
+    },
+    "operations": [
+      "incrementSetpointTemperature",
+      "decrementSetpointTemperature"
+    ],
+    "path": "/devices/roomClimateControl_hz_3/services/RoomClimateControl"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureLevel",
+    "deviceId": "roomClimateControl_hz_3",
+    "state": {
+      "@type": "temperatureLevelState",
+      "temperature": 23.0
+    },
+    "path": "/devices/roomClimateControl_hz_3/services/TemperatureLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "ShutterContact",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000009D585895B0",
+    "state": {
+      "@type": "shutterContactState",
+      "value": "CLOSED"
+    },
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000009D585895B0/services/ShutterContact"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BatteryLevel",
+    "deviceId": "hdm:HomeMaticIP:3014F711A000009D585895B0",
+    "path": "/devices/hdm:HomeMaticIP:3014F711A000009D585895B0/services/BatteryLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueLight",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+    "state": {
+      "@type": "hueModelNumberState",
+      "modelNumber": "TRADFRI bulb E27 WS opal 1000lm"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca/services/HueLight"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "MultiLevelSwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+    "state": {
+      "@type": "multiLevelSwitchState",
+      "level": 1
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca/services/MultiLevelSwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueBlinkingActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+    "state": {
+      "@type": "hueBlinkingState",
+      "blinkingState": "UNKNOWN"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca/services/HueBlinkingActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueColorTemperature",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca",
+    "state": {
+      "@type": "colorTemperatureState",
+      "colorTemperature": 314,
+      "colorTemperatureRange": {
+        "minCt": 250,
+        "maxCt": 454
+      }
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_847127fffe4c279b-01_0017882a77ca/services/HueColorTemperature"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "ThermostatSupportedControlMode",
+    "deviceId": "roomClimateControl_hz_1",
+    "state": {
+      "@type": "thermostatSupportedControlModeState",
+      "supportedControlModes": [
+        "HEATING",
+        "OFF"
+      ]
+    },
+    "path": "/devices/roomClimateControl_hz_1/services/ThermostatSupportedControlMode"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureLevelConfiguration",
+    "deviceId": "roomClimateControl_hz_1",
+    "state": {
+      "@type": "temperatureLevelConfigurationState",
+      "sensors": [
+        {
+          "deviceId": "hdm:HomeMaticIP:3014F711A000005BB8600464",
+          "active": true
+        }
+      ]
+    },
+    "path": "/devices/roomClimateControl_hz_1/services/TemperatureLevelConfiguration"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "RoomClimateControl",
+    "deviceId": "roomClimateControl_hz_1",
+    "state": {
+      "@type": "climateControlState",
+      "operationMode": "AUTOMATIC",
+      "setpointTemperature": 21.0,
+      "setpointTemperatureForLevelEco": 17.0,
+      "setpointTemperatureForLevelComfort": 21.0,
+      "schedule": {
+        "profiles": [
+          {
+            "day": "MONDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "TUESDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "WEDNESDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "THURSDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "FRIDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "SATURDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          },
+          {
+            "day": "SUNDAY",
+            "switchPoints": [
+              {
+                "startTimeMinutes": 0,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              },
+              {
+                "startTimeMinutes": 360,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "COMFORT"
+                }
+              },
+              {
+                "startTimeMinutes": 1380,
+                "value": {
+                  "@type": "temperatureLevelSwitchPointValue",
+                  "temperatureLevel": "ECO"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "ventilationMode": false,
+      "low": false,
+      "boostMode": false,
+      "summerMode": false,
+      "supportsBoostMode": true,
+      "roomControlMode": "HEATING"
+    },
+    "operations": [
+      "incrementSetpointTemperature",
+      "decrementSetpointTemperature"
+    ],
+    "path": "/devices/roomClimateControl_hz_1/services/RoomClimateControl"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "TemperatureLevel",
+    "deviceId": "roomClimateControl_hz_1",
+    "state": {
+      "@type": "temperatureLevelState",
+      "temperature": 23.4
+    },
+    "path": "/devices/roomClimateControl_hz_1/services/TemperatureLevel"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "BinarySwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+    "state": {
+      "@type": "binarySwitchState",
+      "on": false
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca/services/BinarySwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "MultiLevelSwitch",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+    "state": {
+      "@type": "multiLevelSwitchState",
+      "level": 1
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca/services/MultiLevelSwitch"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueBlinkingActuator",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+    "state": {
+      "@type": "hueBlinkingState",
+      "blinkingState": "UNKNOWN"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca/services/HueBlinkingActuator"
+  },
+  {
+    "@type": "DeviceServiceData",
+    "id": "HueLight",
+    "deviceId": "hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca",
+    "state": {
+      "@type": "hueModelNumberState",
+      "modelNumber": "TRADFRI Driver 10W"
+    },
+    "path": "/devices/hdm:PhilipsHueBridge:HueLight_804b50fffe2d3f67-01_0017882a77ca/services/HueLight"
+  }
+]

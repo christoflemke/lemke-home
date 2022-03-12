@@ -1,11 +1,14 @@
+type DeviceType = 'TemperatureLevel' | 'ValveTappet' | 'RoomClimateControl' | 'ShutterContact'
+
 interface BaseService {
   '@type': 'DeviceServiceData'
+  id: DeviceType
   deviceId: string
   state: object
   path: string
 }
 
-interface TemperatureLevelService extends Service {
+interface TemperatureLevelService extends BaseService {
   id: 'TemperatureLevel'
   state: {
     '@type': 'temperatureLevelState'
@@ -13,7 +16,7 @@ interface TemperatureLevelService extends Service {
   }
 }
 
-interface ValveTappetService extends Service {
+interface ValveTappetService extends BaseService {
   id: 'ValveTappet'
   'state': {
     '@type': 'valveTappetState'
@@ -22,7 +25,23 @@ interface ValveTappetService extends Service {
   }
 }
 
-type Service = TemperatureLevelService | ValveTappetService
+interface RoomClimateControlService extends BaseService {
+  id: 'RoomClimateControl'
+  'state': {
+    '@type': 'climateControlState'
+    setpointTemperature: number
+  }
+}
+
+interface ShutterContact extends BaseService {
+  id: 'ShutterContact'
+  state: {
+    '@type': 'shutterContactState'
+    'value': 'CLOSED' | 'OPEN'
+  }
+}
+
+type Service = TemperatureLevelService | ValveTappetService | RoomClimateControlService | ShutterContact
 
 interface Device {
   '@type': string
