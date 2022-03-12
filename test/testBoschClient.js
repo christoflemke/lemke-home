@@ -39,7 +39,7 @@ describe('boschClient', function () {
           jsonrpc: '2.0',
           method: 'RE/longPoll',
           params: [
-            123,
+            '123',
             30
           ]
         }
@@ -48,7 +48,7 @@ describe('boschClient', function () {
       })
       .reply(200, [{ result: { id: 42 } }])
 
-    const response = await boschClient.longPoll(123)
+    const response = await boschClient.longPoll('123')
 
     expect(response).to.eql({ id: 42 })
     scope.done()

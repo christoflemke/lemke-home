@@ -57,3 +57,5 @@ interface Room {
   'name': string
   'roomId'
 }
+
+type PollId = string
