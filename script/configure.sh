@@ -49,7 +49,7 @@ createConfig() {
   "airthings": {
       "username": "${AIRTHINGS_USER}",
       "password": "${AIRTHINGS_PASSWORD}",
-      "intervalSeconds": 600
+      "intervalSeconds": 60
     }
 }
 EOF
