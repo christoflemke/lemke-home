@@ -91,7 +91,32 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "Treppenhaus"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": true
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 9,
@@ -138,7 +163,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "TemperatureLevel",
+          "measurement": "bosch.TemperatureLevel",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -284,7 +309,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "temp",
+          "measurement": "airthings.temp",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -332,7 +357,7 @@
             }
           ],
           "hide": false,
-          "measurement": "humidity",
+          "measurement": "airthings.humidity",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "B",
@@ -412,7 +437,32 @@
             ]
           }
         },
-        "overrides": []
+        "overrides": [
+          {
+            "__systemRef": "hideSeriesFrom",
+            "matcher": {
+              "id": "byNames",
+              "options": {
+                "mode": "exclude",
+                "names": [
+                  "Treppenhaus"
+                ],
+                "prefix": "All except:",
+                "readOnly": true
+              }
+            },
+            "properties": [
+              {
+                "id": "custom.hideFrom",
+                "value": {
+                  "legend": false,
+                  "tooltip": false,
+                  "viz": true
+                }
+              }
+            ]
+          }
+        ]
       },
       "gridPos": {
         "h": 8,
@@ -459,7 +509,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "ValveTappet",
+          "measurement": "bosch.ValveTappet",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -597,7 +647,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "temp",
+          "measurement": "airthings.temp",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -645,7 +695,7 @@
             }
           ],
           "hide": false,
-          "measurement": "humidity",
+          "measurement": "airthings.humidity",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "B",
@@ -776,7 +826,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "radonShortTermAvg",
+          "measurement": "airthings.radonShortTermAvg",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -912,7 +962,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "voc",
+          "measurement": "airthings.voc",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -954,7 +1004,7 @@
             }
           ],
           "hide": false,
-          "measurement": "mold",
+          "measurement": "airthings.mold",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "B",
@@ -1075,7 +1125,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "RoomClimateControl",
+          "measurement": "bosch.RoomClimateControl",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -1101,7 +1151,7 @@
       "type": "timeseries"
     }
   ],
-  "refresh": false,
+  "refresh": "30s",
   "schemaVersion": 35,
   "style": "dark",
   "tags": [],
@@ -1109,13 +1159,13 @@
     "list": []
   },
   "time": {
-    "from": "now-3h",
+    "from": "now-6h",
     "to": "now"
   },
   "timepicker": {},
   "timezone": "",
   "title": "BoschTemp",
   "uid": "-FErpwYnzsa",
-  "version": 14,
+  "version": 16,
   "weekStart": ""
 }

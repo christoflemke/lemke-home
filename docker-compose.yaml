@@ -10,6 +10,8 @@ services:
     image: influxdb:1.7.11
     volumes:
       - influxdb-storage:/var/lib/influxdb
+    ports:
+      - '8086:8086'
     environment:
       - INFLUXDB_DB=db0
       - INFLUXDB_ADMIN_USER=${INFLUX_USER}

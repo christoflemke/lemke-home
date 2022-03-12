@@ -12,7 +12,6 @@
   "author": "Christof Lemke <christoflemke@npmjs.com>",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^14.18.12",
     "axios": "^0.26.0",
     "getconfig": "^4.5.0",
     "influx": "^5.9.3"
@@ -21,6 +20,7 @@
     "@types/chai": "^4.3.0",
     "@types/chai-as-promised": "^7.1.5",
     "@types/mocha": "^9.1.0",
+    "@types/node": "^17.0.21",
     "chai": "^4.3.6",
     "chai-as-promised": "^7.1.1",
     "mocha": "^9.2.1",
