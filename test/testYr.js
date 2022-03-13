@@ -98,7 +98,7 @@ describe('yr', function () {
   describe('event mapper', function () {
     const points = yrForcastToIPoints(readFixture('yrCompact'))
     function findMeasure (name) {
-      return points.find(p => p.measurement === name)?.fields?.value
+      return points[0].fields && points[0].fields[name]
     }
     it('maps air_pressure_at_sea_level', function () {
       expect(findMeasure('air_pressure_at_sea_level')).to.eql(1022.1)

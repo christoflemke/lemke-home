@@ -1,0 +1,1821 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "28219a37-d591-8846-adb1-ceb179fb8add",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:30:27.575393Z",
+        "observed": "2022-03-13T06:30:00Z",
+        "parameterId": "humidity",
+        "stationId": "06074",
+        "value": 74
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "44579976-14ee-03c4-2713-b8dde7a5b396",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:30:26.369763Z",
+        "observed": "2022-03-13T06:30:00Z",
+        "parameterId": "visib_mean_last10min",
+        "stationId": "06074",
+        "value": 24200
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "514f1449-cd78-0fa5-34b7-70dced7eadfb",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:30:26.486401Z",
+        "observed": "2022-03-13T06:30:00Z",
+        "parameterId": "wind_max",
+        "stationId": "06074",
+        "value": 6.3
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "6400dddc-66cb-31c5-1f6a-99b32c3e0916",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:30:26.487089Z",
+        "observed": "2022-03-13T06:30:00Z",
+        "parameterId": "wind_speed",
+        "stationId": "06074",
+        "value": 3.7
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "91cc8dcb-06fd-70c5-97cb-34b5c1f25b58",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:30:27.464821Z",
+        "observed": "2022-03-13T06:30:00Z",
+        "parameterId": "cloud_cover",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "93f4298d-5732-c606-ca73-ceb720fb2b1d",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:30:26.485490Z",
+        "observed": "2022-03-13T06:30:00Z",
+        "parameterId": "temp_dry",
+        "stationId": "06074",
+        "value": 1.9
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "b5089193-953a-3109-16c6-0cbbb4a1fe8b",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:30:26.484721Z",
+        "observed": "2022-03-13T06:30:00Z",
+        "parameterId": "temp_dew",
+        "stationId": "06074",
+        "value": -2.2
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "c0d4d499-6d51-2dfb-5d86-7aeebf45b435",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:30:27.482260Z",
+        "observed": "2022-03-13T06:30:00Z",
+        "parameterId": "visibility",
+        "stationId": "06074",
+        "value": 24000
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "d882f961-e755-0a70-1364-9d53775f8beb",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:30:27.776422Z",
+        "observed": "2022-03-13T06:30:00Z",
+        "parameterId": "pressure_at_sea",
+        "stationId": "06074",
+        "value": 1022
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "e1a3d2fe-352f-4843-0e50-0f0d36df98df",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:30:26.485957Z",
+        "observed": "2022-03-13T06:30:00Z",
+        "parameterId": "wind_dir",
+        "stationId": "06074",
+        "value": 112
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "fe7f4adc-ede2-0aef-8330-fbbfff401929",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:30:27.766106Z",
+        "observed": "2022-03-13T06:30:00Z",
+        "parameterId": "pressure",
+        "stationId": "06074",
+        "value": 1015
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "0fad0c74-609b-3f72-2ce6-eb54f589f8da",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.180046Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "visib_mean_last10min",
+        "stationId": "06074",
+        "value": 24600
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "1ce81e65-e3ca-cd63-d9dc-652605fe3382",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.465469Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "wind_speed",
+        "stationId": "06074",
+        "value": 3.5
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "3f34f506-0e38-8c74-8c63-466d019c4e5d",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.382505Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "temp_dry",
+        "stationId": "06074",
+        "value": 1.6
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "5151b786-0105-54c6-5720-2b4c0761c5d3",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.371654Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "precip_past10min",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "68f8f12f-e794-cb2d-f6e3-2e5052db3ebf",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.371078Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "humidity",
+        "stationId": "06074",
+        "value": 76
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "a4d0bbfc-f4a5-f1e9-cb94-74edff0afa0b",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.382980Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "wind_dir",
+        "stationId": "06074",
+        "value": 110
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "b06dffae-a490-ab3c-b69a-5ae28df8bea8",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.373503Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "cloud_cover",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "be348076-0e9a-dde1-442a-f41904a6434f",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.372375Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "pressure",
+        "stationId": "06074",
+        "value": 1015.1
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "cb68a6a6-665a-04a5-6c67-d30673eb0e8f",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.273531Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "precip_dur_past10min",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "ce994c0c-551c-2eed-b24e-c96ae65f7229",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.383679Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "wind_max",
+        "stationId": "06074",
+        "value": 5.6
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "d9df6fd4-d669-9baa-92b3-c4375fa54ccf",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.381726Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "temp_dew",
+        "stationId": "06074",
+        "value": -2.2
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "eb9d3b49-4cdd-b442-94ff-006f476cb5a1",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.374167Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "visibility",
+        "stationId": "06074",
+        "value": 24000
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "fe132253-2d5c-c5d6-e30d-42e4278f53e7",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:19:44.373019Z",
+        "observed": "2022-03-13T06:20:00Z",
+        "parameterId": "pressure_at_sea",
+        "stationId": "06074",
+        "value": 1022.1
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "026015e3-4242-3560-dec2-f07fd45d1a2a",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.775397Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "wind_speed",
+        "stationId": "06074",
+        "value": 3.7
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "1f9dc1d2-3c6d-46ee-cf00-a238c3dbf0f9",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.773506Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "wind_dir",
+        "stationId": "06074",
+        "value": 109
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "2bc251b5-53b0-ec0d-5b72-96aea0d7281c",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.772351Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "temp_dry",
+        "stationId": "06074",
+        "value": 1.5
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "472c7abc-86be-74ec-88e1-c0f79e71c24f",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.780573Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "visibility",
+        "stationId": "06074",
+        "value": 23000
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "66085135-a24b-dbd9-2a3c-86f21265d9e5",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.774466Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "wind_max",
+        "stationId": "06074",
+        "value": 6
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "7b38113c-b1a5-40d1-f261-cc4c1b99efd7",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.777043Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "visib_mean_last10min",
+        "stationId": "06074",
+        "value": 23700
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "7b4f5242-c5db-60a4-6531-31e5a478ad75",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.548769Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "pressure",
+        "stationId": "06074",
+        "value": 1014.9
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "7d3dcce9-d90b-1101-3109-c4637373d7bc",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.771202Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "temp_dew",
+        "stationId": "06074",
+        "value": -2.3
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "87d7a62b-13d0-9af1-41a8-4f8a0aa1b3d4",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.549932Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "precip_dur_past10min",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "a0ca1c1f-71dc-b8fd-cd58-ce576f118b64",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.546304Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "humidity",
+        "stationId": "06074",
+        "value": 76
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "a81ada6f-bed0-7685-1797-306cd578396f",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.547705Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "precip_past10min",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "ce5243c6-e1dc-e8e8-e03c-480cbcd1a81f",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.779955Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "cloud_cover",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "eab8b81a-b414-9ebf-8720-b24ccee27509",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:10:04.549347Z",
+        "observed": "2022-03-13T06:10:00Z",
+        "parameterId": "pressure_at_sea",
+        "stationId": "06074",
+        "value": 1022
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "03290943-ba74-82da-011c-5d1a8056dc8d",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.474683Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "precip_dur_past1h",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "04347719-9b7d-b03a-a03c-1026801a4141",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.566462Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "temp_max_past1h",
+        "stationId": "06074",
+        "value": 1.6
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "11b7f90e-6261-c23d-c5bc-68d079891bb6",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.572716Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "wind_max",
+        "stationId": "06074",
+        "value": 7
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "1c98d1dd-3052-50c1-cf92-5945aabd99ba",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.573141Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "wind_speed",
+        "stationId": "06074",
+        "value": 3.9
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "1e9fefd5-d6d7-9f98-57c7-6e2128567594",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.380529Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "humidity_past1h",
+        "stationId": "06074",
+        "value": 75
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "202b24fb-f21f-1e93-1d9e-9300c514e5a1",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.376115Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "visib_mean_last10min",
+        "stationId": "06074",
+        "value": 24000
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "281e3619-465a-510d-0821-2234ac61f441",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.567682Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "temp_min_past1h",
+        "stationId": "06074",
+        "value": 1.1
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "3d1e444f-f406-eb65-d49f-087e17771331",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.572169Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "wind_gust_always_past1h",
+        "stationId": "06074",
+        "value": 7.1
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "4f1aae0c-7e71-17ac-d768-9d1870efbe2a",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.565151Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "temp_dew",
+        "stationId": "06074",
+        "value": -2.4
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "50c39726-5843-443f-c350-f2f9e17db78c",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.571381Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "wind_dir_past1h",
+        "stationId": "06074",
+        "value": 109
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "5ae004cd-1281-02e3-b7d2-d573a8bff493",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.374257Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "cloud_cover",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "760894f9-4988-9d91-987d-049d1c21e71f",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.569138Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "temp_min_past12h",
+        "stationId": "06074",
+        "value": 0.8
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "79733c9d-652a-a679-a3cf-6150bdf7ab49",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.568503Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "temp_max_past12h",
+        "stationId": "06074",
+        "value": 3.9
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "851642fb-b516-992b-1e68-e6d37f1ab2d4",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.473804Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "precip_dur_past10min",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "9360a9d1-3325-b984-af15-124f4f85c2e0",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.379902Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "humidity",
+        "stationId": "06074",
+        "value": 75
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "9e7134da-2010-75c5-fe0b-5c31332eac2b",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.570070Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "wind_max_per10min_past1h",
+        "stationId": "06074",
+        "value": 3.9
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "a76f56f7-7937-eb4a-f508-dc3e1bed99be",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.374883Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "visibility",
+        "stationId": "06074",
+        "value": 24000
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "af4f4f27-42c7-2432-0dc2-102c166f40f1",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.566878Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "temp_mean_past1h",
+        "stationId": "06074",
+        "value": 1.4
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "b09ccb2f-2b31-4553-7634-774e85ec611c",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.382380Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "pressure",
+        "stationId": "06074",
+        "value": 1014.8
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "be82f416-cf6c-5903-26b7-17796bf969aa",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.570862Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "wind_dir",
+        "stationId": "06074",
+        "value": 109
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "c50473eb-6f3d-a5e9-118a-62bac24c9fc8",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.380988Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "precip_past10min",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "c5353691-2086-d32c-89f6-b810def18eac",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.565903Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "temp_dry",
+        "stationId": "06074",
+        "value": 1.5
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "d76e6ebb-da2a-d5b5-ff01-86a133122f58",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.381432Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "precip_past1h",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "e011762b-505d-844c-cd53-6b861e3f061e",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.573846Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "wind_speed_past1h",
+        "stationId": "06074",
+        "value": 3.4
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "f510e32f-3e18-9103-c5b4-d5ddda03acea",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T06:00:02.383087Z",
+        "observed": "2022-03-13T06:00:00Z",
+        "parameterId": "pressure_at_sea",
+        "stationId": "06074",
+        "value": 1021.9
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "0073f9f9-435b-1785-b1ea-b91afd63a7e0",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.546972Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "precip_past10min",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "0546d0ae-4fec-7a36-51a3-415647104552",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.547890Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "pressure",
+        "stationId": "06074",
+        "value": 1014.9
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "09834db0-d965-a2e5-7fc5-972311d1b89a",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.678683Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "wind_max",
+        "stationId": "06074",
+        "value": 6.5
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "0c06134c-1c86-28e5-754d-ef1d6855275f",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.677268Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "temp_dry",
+        "stationId": "06074",
+        "value": 1.5
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "0d147a01-7ba5-a5a0-e7dc-8bea5a4bca88",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.545986Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "humidity",
+        "stationId": "06074",
+        "value": 75
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "46e25a0b-06a7-b60b-e78d-a758fcdbb6b6",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.548421Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "pressure_at_sea",
+        "stationId": "06074",
+        "value": 1021.9
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "47d1b612-b6e3-1132-75ea-39f518f4bf37",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.676721Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "temp_dew",
+        "stationId": "06074",
+        "value": -2.4
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "778d648b-cb46-31d1-a3cb-119adb5850fa",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.679227Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "wind_speed",
+        "stationId": "06074",
+        "value": 3.7
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "98b318f5-2382-346c-ae80-83c496f19689",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.678144Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "wind_dir",
+        "stationId": "06074",
+        "value": 110
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "a024020b-d8ae-c52a-1e17-38ee340aa1df",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.675723Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "precip_dur_past10min",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "b60900cd-780b-7fd9-144a-9c2683e312bd",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.669389Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "visibility",
+        "stationId": "06074",
+        "value": 23000
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "d4ad40d3-3831-4468-a0e7-4a38545d565d",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.575350Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "visib_mean_last10min",
+        "stationId": "06074",
+        "value": 23300
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "eaa20b4c-db41-1557-0d00-8c0deb227c81",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:50:01.668738Z",
+        "observed": "2022-03-13T05:50:00Z",
+        "parameterId": "cloud_cover",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "08ced8e7-a8c5-8be4-05f3-ac19f6b7c745",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.049713Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "pressure_at_sea",
+        "stationId": "06074",
+        "value": 1021.9
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "5377be95-6499-4b7d-b445-7c50441ddff4",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.073309Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "visib_mean_last10min",
+        "stationId": "06074",
+        "value": 24900
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "77296bb2-149b-6020-ab1b-6d902a30d1a6",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.061038Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "wind_dir",
+        "stationId": "06074",
+        "value": 109
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "7cc8cecd-36f0-3a65-8113-77fd0f9f4cd5",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.059511Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "temp_dew",
+        "stationId": "06074",
+        "value": -2.5
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "852510d8-d412-b0b8-802c-856c8488c0ac",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.060140Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "temp_dry",
+        "stationId": "06074",
+        "value": 1.6
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "85944438-f7e4-b45b-4296-c79e25238e27",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.062721Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "precip_dur_past10min",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "8dfb7d88-1f30-32a9-020d-1f089209653f",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.062061Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "wind_speed",
+        "stationId": "06074",
+        "value": 3.3
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "9100acea-a9c5-5f42-d5c0-2e3d91100e03",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.061535Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "wind_max",
+        "stationId": "06074",
+        "value": 6.5
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "ab4962a2-d064-623c-dd5f-d155d7bb388b",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.074395Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "visibility",
+        "stationId": "06074",
+        "value": 24000
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "b550c863-58f9-56b9-fb74-729285ec32a4",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.048744Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "pressure",
+        "stationId": "06074",
+        "value": 1014.8
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "c9e888d7-1de4-7ce7-43ab-2f82eca095a6",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.073943Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "cloud_cover",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "d1798f03-5fa8-fa6c-4411-4c1a07f613b8",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.046160Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "humidity",
+        "stationId": "06074",
+        "value": 74
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "dbdb4978-169f-9d0d-ad3a-b71d3df2fd0f",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:39:43.047486Z",
+        "observed": "2022-03-13T05:40:00Z",
+        "parameterId": "precip_past10min",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "14282e37-5f8f-334f-e775-4fbf2e23b53b",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:29:49.669268Z",
+        "observed": "2022-03-13T05:30:00Z",
+        "parameterId": "pressure",
+        "stationId": "06074",
+        "value": 1014.8
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "88578fce-51f0-ffc0-4cb2-b17066d25bbd",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:29:49.666537Z",
+        "observed": "2022-03-13T05:30:00Z",
+        "parameterId": "wind_dir",
+        "stationId": "06074",
+        "value": 105
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "8e0c7031-b2ac-650a-3146-00f258c27993",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:29:49.672801Z",
+        "observed": "2022-03-13T05:30:00Z",
+        "parameterId": "visibility",
+        "stationId": "06074",
+        "value": 23000
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "8fb1b7d0-8a22-4314-1942-bc7717cd5bc3",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:29:49.668632Z",
+        "observed": "2022-03-13T05:30:00Z",
+        "parameterId": "humidity",
+        "stationId": "06074",
+        "value": 75
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "9c64e909-a5b4-c0e1-524d-b5263f00ce3d",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:29:49.667522Z",
+        "observed": "2022-03-13T05:30:00Z",
+        "parameterId": "wind_speed",
+        "stationId": "06074",
+        "value": 3.8
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "a6fb7a92-cd3e-8693-c6c8-77be3a807333",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:29:49.667087Z",
+        "observed": "2022-03-13T05:30:00Z",
+        "parameterId": "wind_max",
+        "stationId": "06074",
+        "value": 7.1
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "ab2b17b4-75be-9466-329d-de822d110d70",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:29:49.664414Z",
+        "observed": "2022-03-13T05:30:00Z",
+        "parameterId": "temp_dew",
+        "stationId": "06074",
+        "value": -2.4
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "b4a1af4a-dbb4-8a98-c1af-700596b7c905",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:29:49.665794Z",
+        "observed": "2022-03-13T05:30:00Z",
+        "parameterId": "temp_dry",
+        "stationId": "06074",
+        "value": 1.5
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "dc93b3bf-e03a-0769-7853-01955be0577c",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:29:49.670055Z",
+        "observed": "2022-03-13T05:30:00Z",
+        "parameterId": "pressure_at_sea",
+        "stationId": "06074",
+        "value": 1021.8
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "e84d54ba-6c9e-c600-7116-d77bc7c0c7f0",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:29:49.670718Z",
+        "observed": "2022-03-13T05:30:00Z",
+        "parameterId": "visib_mean_last10min",
+        "stationId": "06074",
+        "value": 23000
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "ee8959af-8f78-818a-0138-3d53ddb1879c",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:29:49.672077Z",
+        "observed": "2022-03-13T05:30:00Z",
+        "parameterId": "cloud_cover",
+        "stationId": "06074",
+        "value": 0
+      }
+    },
+    {
+      "geometry": {
+        "coordinates": [
+          10.1353,
+          56.0803
+        ],
+        "type": "Point"
+      },
+      "id": "1e61ce74-a288-cd6f-0a5e-a847e522833a",
+      "type": "Feature",
+      "properties": {
+        "created": "2022-03-13T05:19:45.058141Z",
+        "observed": "2022-03-13T05:20:00Z",
+        "parameterId": "temp_dew",
+        "stationId": "06074",
+        "value": -2.6
+      }
+    }
+  ],
+  "timeStamp": "2022-03-13T06:38:52Z",
+  "numberReturned": 100,
+  "links": [
+    {
+      "href": "https://dmigw.govcloud.dk/v2/metObs/collections/observation/items?api-key=2ca4f3a0-891f-469f-9d71-2ea41f20d234&stationId=06074&period=latest&limit=100",
+      "rel": "self",
+      "type": "application/geo+json",
+      "title": "This document"
+    },
+    {
+      "href": "https://dmigw.govcloud.dk/v2/metObs/collections/observation/items?api-key=2ca4f3a0-891f-469f-9d71-2ea41f20d234&stationId=06074&period=latest&limit=100&offset=100",
+      "rel": "next",
+      "type": "application/geo+json",
+      "title": "Next set of results"
+    }
+  ]
+}
