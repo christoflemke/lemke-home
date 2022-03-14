@@ -22,7 +22,7 @@ services:
   grafana:
     image: grafana/grafana:8.4.3
     ports:
-      - '127.0.0.1:1337:3000'
+      - '0.0.0.0:1337:3000'
     volumes:
       - grafana-storage:/var/lib/grafana
       - ./grafana-provisioning/:/etc/grafana/provisioning
