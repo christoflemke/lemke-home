@@ -9,8 +9,8 @@ describe('airthingsParser', function () {
   const points = parser.toInfluxEvents(fixture)
 
   function testValue (measurement, room, expected) {
-    const roomPoint = points.find(e => e?.tags?.room === room)
-    const value = roomPoint && roomPoint.fields && roomPoint.fields[measurement]
+    const roomPoint = points.find(e => e.tags.room === room)
+    const value = roomPoint && roomPoint.fields[measurement]
     expect(value).to.eql(expected)
   }
 

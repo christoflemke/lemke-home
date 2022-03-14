@@ -10,16 +10,16 @@ describe('dmi', function () {
     })
 
     it('maps humidity', function () {
-      expect(points[0]?.fields?.humidity).to.eql(74)
+      expect(points[0].fields.humidity).to.eql(74)
     })
 
     it('maps visib_mean_last10min', function () {
-      expect(points[0]?.fields?.visib_mean_last10min).to.eql(24200)
+      expect(points[0].fields.visib_mean_last10min).to.eql(24200)
     })
 
     it('includes lon and lat', function () {
-      expect(points[0].tags?.lon).to.eql('10.1353')
-      expect(points[0].tags?.lat).to.eql('56.0803')
+      expect(points[0].tags.lon).to.eql('10.1353')
+      expect(points[0].tags.lat).to.eql('56.0803')
     })
   })
 })

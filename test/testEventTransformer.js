@@ -57,7 +57,7 @@ describe('eventTransformer.toInfluxEvent', function () {
      */
     function findPoint (device, type) {
       return points.find(p =>
-        p.tags?.deviceId === device &&
+        p.tags.deviceId === device &&
         p.measurement === type
       )
     }
