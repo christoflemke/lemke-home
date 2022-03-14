@@ -20,7 +20,7 @@
         "enable": true,
         "iconColor": "red",
         "name": "Window Open",
-        "query": "select title, value from bosch_ShutterContact where value = 'OPEN'",
+        "query": "select title, value from bosch_ShutterAnnotation where value = 'OPEN'",
         "tagsColumn": "roomName",
         "textColumn": ""
       },
@@ -28,7 +28,7 @@
         "enable": true,
         "iconColor": "dark-blue",
         "name": "Window Closed",
-        "query": "select title, value from bosch_ShutterContact where value = 'CLOSED'",
+        "query": "select title, value from bosch_ShutterAnnotation where value = 'CLOSED'",
         "tagsColumn": "roomName"
       }
     ]
@@ -1114,7 +1114,7 @@
   },
   "timepicker": {},
   "timezone": "",
-  "title": "BoschTemp",
+  "title": "Bosch",
   "uid": "-FErpwYnzsa",
   "version": 18,
   "weekStart": ""
