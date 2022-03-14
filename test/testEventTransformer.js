@@ -16,7 +16,7 @@ describe('eventTransformer.toInfluxEvent', function () {
       const [influxEvent] = serviceToPoints(event)
 
       expect(influxEvent).to.eql({
-        measurement: 'bosch.RoomClimateControl',
+        measurement: 'bosch_RoomClimateControl',
         tags: {
           deviceId: 'roomClimateControl_hz_1',
           name: 'roomClimateControl_hz_1',
@@ -34,7 +34,7 @@ describe('eventTransformer.toInfluxEvent', function () {
       const [influxEvent] = serviceToPoints(event)
 
       expect(influxEvent).to.eql({
-        measurement: 'bosch.TemperatureLevel',
+        measurement: 'bosch_TemperatureLevel',
         tags: {
           deviceId: 'hdm:HomeMaticIP:3014F711A000005BB8600464',
           name: 'Radiator thermostat',
@@ -63,13 +63,13 @@ describe('eventTransformer.toInfluxEvent', function () {
     }
 
     it('maps temperature for zones', function () {
-      const temperatureZone = findPoint('roomClimateControl_hz_2', 'bosch.TemperatureLevel')
+      const temperatureZone = findPoint('roomClimateControl_hz_2', 'bosch_TemperatureLevel')
 
       expect(temperatureZone).to.eql({
         fields: {
           value: 23.4
         },
-        measurement: 'bosch.TemperatureLevel',
+        measurement: 'bosch_TemperatureLevel',
         tags: {
           deviceId: 'roomClimateControl_hz_2',
           name: 'roomClimateControl_hz_2',
@@ -79,13 +79,13 @@ describe('eventTransformer.toInfluxEvent', function () {
     })
 
     it('maps temperature for thermostats', function () {
-      const temperatureZone = findPoint('hdm:HomeMaticIP:3014F711A000005BB8600768', 'bosch.TemperatureLevel')
+      const temperatureZone = findPoint('hdm:HomeMaticIP:3014F711A000005BB8600768', 'bosch_TemperatureLevel')
 
       expect(temperatureZone).to.eql({
         fields: {
           value: 23.4
         },
-        measurement: 'bosch.TemperatureLevel',
+        measurement: 'bosch_TemperatureLevel',
         tags: {
           deviceId: 'hdm:HomeMaticIP:3014F711A000005BB8600768',
           name: 'Radiator thermostat 2',
@@ -95,13 +95,13 @@ describe('eventTransformer.toInfluxEvent', function () {
     })
 
     it('maps valve tappet state', function () {
-      const tappetState = findPoint('hdm:HomeMaticIP:3014F711A000005BB8600763', 'bosch.ValveTappet')
+      const tappetState = findPoint('hdm:HomeMaticIP:3014F711A000005BB8600763', 'bosch_ValveTappet')
 
       expect(tappetState).to.eql({
         fields: {
           value: 5
         },
-        measurement: 'bosch.ValveTappet',
+        measurement: 'bosch_ValveTappet',
         tags: {
           deviceId: 'hdm:HomeMaticIP:3014F711A000005BB8600763',
           name: 'Radiator thermostat 3 *',
@@ -111,14 +111,14 @@ describe('eventTransformer.toInfluxEvent', function () {
     })
 
     it('maps shutter state', function () {
-      const shutterState = findPoint('hdm:HomeMaticIP:3014F711A000009D58589716', 'bosch.ShutterContact')
+      const shutterState = findPoint('hdm:HomeMaticIP:3014F711A000009D58589716', 'bosch_ShutterContact')
 
       expect(shutterState).to.eql({
         fields: {
           title: 'Window in Bad unten is closed',
           value: 'CLOSED'
         },
-        measurement: 'bosch.ShutterContact',
+        measurement: 'bosch_ShutterContact',
         tags: {
           deviceId: 'hdm:HomeMaticIP:3014F711A000009D58589716',
           name: 'Door/window contact',
@@ -128,13 +128,13 @@ describe('eventTransformer.toInfluxEvent', function () {
     })
 
     it('maps set point temperature', function () {
-      const setPoint = findPoint('roomClimateControl_hz_3', 'bosch.RoomClimateControl')
+      const setPoint = findPoint('roomClimateControl_hz_3', 'bosch_RoomClimateControl')
 
       expect(setPoint).to.eql({
         fields: {
           value: 21
         },
-        measurement: 'bosch.RoomClimateControl',
+        measurement: 'bosch_RoomClimateControl',
         tags: {
           deviceId: 'roomClimateControl_hz_3',
           name: 'roomClimateControl_hz_3',

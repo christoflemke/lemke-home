@@ -127,7 +127,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "yr.forecast",
+          "measurement": "yr_forecast",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -168,7 +168,7 @@
             }
           ],
           "hide": false,
-          "measurement": "yr.forecast",
+          "measurement": "yr_forecast",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "B",
@@ -295,7 +295,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "yr.forecast",
+          "measurement": "yr_forecast",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -336,7 +336,7 @@
             }
           ],
           "hide": false,
-          "measurement": "yr.forecast",
+          "measurement": "yr_forecast",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "B",

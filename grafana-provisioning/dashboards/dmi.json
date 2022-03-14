@@ -133,7 +133,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "dmi.stationData",
+          "measurement": "dmi_stationData",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -180,7 +180,7 @@
             }
           ],
           "hide": false,
-          "measurement": "dmi.stationData",
+          "measurement": "dmi_stationData",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "B",
