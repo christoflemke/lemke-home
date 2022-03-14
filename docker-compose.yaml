@@ -5,6 +5,7 @@ services:
     build:
       context: .
     image: node-poll
+    restart: unless-stopped
 
   influxdb:
     image: influxdb:1.7.11
@@ -16,6 +17,7 @@ services:
       - INFLUXDB_DB=db0
       - INFLUXDB_ADMIN_USER=${INFLUX_USER}
       - INFLUXDB_ADMIN_PASSWORD=${INFLUX_PASSWORD}
+    restart: unless-stopped
 
   grafana:
     image: grafana/grafana:8.4.3
@@ -29,6 +31,8 @@ services:
     environment:
       - GF_SECURITY_ADMIN_USER=${GRAFANA_USER}
       - GF_SECURITY_ADMIN_PASSWORD=${GRAFANA_PASSWORD}
+    restart: unless-stopped
+
 volumes:
   influxdb-storage:
   grafana-storage:
