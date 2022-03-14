@@ -91,32 +91,7 @@
             ]
           }
         },
-        "overrides": [
-          {
-            "__systemRef": "hideSeriesFrom",
-            "matcher": {
-              "id": "byNames",
-              "options": {
-                "mode": "exclude",
-                "names": [
-                  "Treppenhaus"
-                ],
-                "prefix": "All except:",
-                "readOnly": true
-              }
-            },
-            "properties": [
-              {
-                "id": "custom.hideFrom",
-                "value": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": true
-                }
-              }
-            ]
-          }
-        ]
+        "overrides": []
       },
       "gridPos": {
         "h": 9,
@@ -309,7 +284,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "airthings.temp",
+          "measurement": "airthings.sensorValues",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -318,7 +293,7 @@
             [
               {
                 "params": [
-                  "value"
+                  "temp"
                 ],
                 "type": "field"
               },
@@ -357,7 +332,7 @@
             }
           ],
           "hide": false,
-          "measurement": "airthings.humidity",
+          "measurement": "airthings.sensorValues",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "B",
@@ -366,7 +341,7 @@
             [
               {
                 "params": [
-                  "value"
+                  "humidity"
                 ],
                 "type": "field"
               },
@@ -437,32 +412,7 @@
             ]
           }
         },
-        "overrides": [
-          {
-            "__systemRef": "hideSeriesFrom",
-            "matcher": {
-              "id": "byNames",
-              "options": {
-                "mode": "exclude",
-                "names": [
-                  "Treppenhaus"
-                ],
-                "prefix": "All except:",
-                "readOnly": true
-              }
-            },
-            "properties": [
-              {
-                "id": "custom.hideFrom",
-                "value": {
-                  "legend": false,
-                  "tooltip": false,
-                  "viz": true
-                }
-              }
-            ]
-          }
-        ]
+        "overrides": []
       },
       "gridPos": {
         "h": 8,
@@ -647,7 +597,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "airthings.temp",
+          "measurement": "airthings.sensorValues",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -656,7 +606,7 @@
             [
               {
                 "params": [
-                  "value"
+                  "temp"
                 ],
                 "type": "field"
               },
@@ -695,7 +645,7 @@
             }
           ],
           "hide": false,
-          "measurement": "airthings.humidity",
+          "measurement": "airthings.sensorValues",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "B",
@@ -704,7 +654,7 @@
             [
               {
                 "params": [
-                  "value"
+                  "humidity"
                 ],
                 "type": "field"
               },
@@ -826,7 +776,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "airthings.radonShortTermAvg",
+          "measurement": "airthings.sensorValues",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -835,7 +785,7 @@
             [
               {
                 "params": [
-                  "value"
+                  "radonShortTermAvg"
                 ],
                 "type": "field"
               },
@@ -962,7 +912,7 @@
               "type": "fill"
             }
           ],
-          "measurement": "airthings.voc",
+          "measurement": "airthings.sensorValues",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "A",
@@ -971,7 +921,7 @@
             [
               {
                 "params": [
-                  "value"
+                  "voc"
                 ],
                 "type": "field"
               },
@@ -1004,7 +954,7 @@
             }
           ],
           "hide": false,
-          "measurement": "airthings.mold",
+          "measurement": "airthings.sensorValues",
           "orderByTime": "ASC",
           "policy": "default",
           "refId": "B",
@@ -1013,7 +963,7 @@
             [
               {
                 "params": [
-                  "value"
+                  "mold"
                 ],
                 "type": "field"
               },
@@ -1166,6 +1116,6 @@
   "timezone": "",
   "title": "BoschTemp",
   "uid": "-FErpwYnzsa",
-  "version": 16,
+  "version": 18,
   "weekStart": ""
 }
