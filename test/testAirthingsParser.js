@@ -6,13 +6,17 @@ const { expect } = require('chai')
 const fixture = JSON.parse(fs.readFileSync(path.join(__dirname, 'fixtures', 'airthings.json')).toString())
 
 describe('airthingsParser', function () {
-  function testValue (measurement, room, expected) {
-    const temperature = parser
-      .toInfluxEvents(fixture)
-      .find(e => e.measurement === measurement && e?.tags?.room === room)
+  const points = parser.toInfluxEvents(fixture)
 
-    expect(temperature?.fields?.value).to.eql(expected)
+  function testValue (measurement, room, expected) {
+    const roomPoint = points.find(e => e?.tags?.room === room)
+    const value = roomPoint && roomPoint.fields && roomPoint.fields[measurement]
+    expect(value).to.eql(expected)
   }
+
+  it('maps to one point for each room', function () {
+    expect(points.length).to.eql(2)
+  })
 
   it('reports temperature', function () {
     testValue('temp', 'Upstairs', 21.3)

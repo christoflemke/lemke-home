@@ -26,9 +26,9 @@ interface BoschConfig {
 }
 
 interface DmiConfig {
-  "client_id": string,
-  "api_key": string,
-  "metObsApiBaseUrl": "https://dmigw.govcloud.dk/v2/metObs"
+  'client_id': string
+  'api_key': string
+  'metObsApiBaseUrl': 'https://dmigw.govcloud.dk/v2/metObs'
 }
 
 interface Configuration {

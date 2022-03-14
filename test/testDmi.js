@@ -5,7 +5,6 @@ const { observationsToPoints } = require('../lib/dmi/dmiEventMapper')
 describe('dmi', function () {
   const points = observationsToPoints(readFixture('dmiObservations'))
   describe('event mapper', function () {
-
     it('maps to a single point', function () {
       expect(points.length).to.eql(1)
     })

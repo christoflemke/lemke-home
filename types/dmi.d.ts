@@ -1,13 +1,13 @@
-type Geometry = {
+interface Geometry {
   coordinates: [
     number, // lon
     number // lat
-  ],
-  type: "Point"
-};
+  ]
+  type: 'Point'
+}
 
 interface Station {
-  geometry: Geometry,
+  geometry: Geometry
   id: string
   properties: {
     name: string
@@ -19,23 +19,23 @@ interface Station {
 }
 
 interface StationCollection {
-  type: "FeatureCollection",
+  type: 'FeatureCollection'
   features: Station[]
   numberReturned: number
-  links: {
+  links: Array<{
     href: string
     rel: 'self' | 'next'
     title: string
-  }[]
+  }>
 }
 
-type ObservationMeasurement = {
+interface ObservationMeasurement {
   created: Date
   observed: Date
   parameterId: string // pressure, temp, etc
   stationId: string
   value: number
-};
+}
 
 interface Observation {
   geometry: Geometry
@@ -45,6 +45,6 @@ interface Observation {
 }
 
 interface ObservationCollection {
-  type: "FeatureCollection"
+  type: 'FeatureCollection'
   features: Observation[]
 }
