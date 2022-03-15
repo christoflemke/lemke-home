@@ -31,7 +31,7 @@ interface DmiConfig {
   'metObsApiBaseUrl': 'https://dmigw.govcloud.dk/v2/metObs'
 }
 
-interface Configuration {
+export default interface Configuration {
   yr: YrConfig
   airthings: AirthingsConfig
   influx: InfluxConfig
