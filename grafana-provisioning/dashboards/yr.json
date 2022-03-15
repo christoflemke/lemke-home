@@ -21,7 +21,6 @@
   "editable": true,
   "fiscalYearStartMonth": 0,
   "graphTooltip": 0,
-  "id": 3,
   "links": [],
   "liveNow": false,
   "panels": [
@@ -109,6 +108,7 @@
       },
       "targets": [
         {
+          "alias": "wind speed",
           "datasource": {
             "type": "influxdb",
             "uid": "P951FEA4DE68E13C5"
@@ -149,6 +149,7 @@
           "tags": []
         },
         {
+          "alias": "pressure",
           "datasource": {
             "type": "influxdb",
             "uid": "P951FEA4DE68E13C5"
@@ -277,6 +278,7 @@
       },
       "targets": [
         {
+          "alias": "air temperature",
           "datasource": {
             "type": "influxdb",
             "uid": "P951FEA4DE68E13C5"
@@ -317,6 +319,7 @@
           "tags": []
         },
         {
+          "alias": "humidity",
           "datasource": {
             "type": "influxdb",
             "uid": "P951FEA4DE68E13C5"
@@ -376,6 +379,6 @@
   "timezone": "",
   "title": "Yr",
   "uid": "I8BGImE7k",
-  "version": 5,
+  "version": 1,
   "weekStart": ""
 }
