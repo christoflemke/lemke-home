@@ -5,13 +5,18 @@ set -e
 cd $(dirname $0)
 cd ..
 
-if [ ! -f .env ]; then
-  echo 'missing .env, run ./script/configure.sh first'
-fi
+read_value() {
+  jq -r $1 config/default.json
+}
 
-if [ ! -f config/default.json ]; then
-  echo 'missing config/default.json, run ./script/configure.sh first'
-fi
+
+cat <<EOF > .env
+INFLUX_USER=$(read_value .influx.user)
+INFLUX_PASSWORD=$(read_value .influx.password)
+GRAFANA_USER=$(read_value .grafana.defaultUsername)
+GRAFANA_PASSWORD=$(read_value .grafana.defaultPassword)
+EOF
+
 docker-compose build
 docker-compose up -d
 docker-compose logs -f poll

@@ -6,6 +6,10 @@ services:
       context: .
     image: node-poll
     restart: unless-stopped
+    volumes:
+      - ./config:/app/config
+    environment:
+      - NODE_ENV=docker
 
   influxdb:
     image: influxdb:1.7.11

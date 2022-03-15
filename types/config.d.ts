@@ -20,8 +20,8 @@ interface InfluxConfig {
 }
 
 interface BoschConfig {
-  'clientCert': string
-  'clientKey': string
+  'clientCertLocation': string
+  'clientKeyLocation': string
   'baseUrl': string
 }
 

@@ -10,5 +10,4 @@ WORKDIR /app
 COPY --from=node_modules /app/node_modules /app/node_modules
 COPY index.js /app
 COPY lib /app/lib
-COPY config/docker.json /app/config/default.json
 CMD node /app/index.js
