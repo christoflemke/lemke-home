@@ -9,6 +9,10 @@ read_value() {
   jq -r $1 config/default.json
 }
 
+if [ -z "$(which jq)" ]; then
+  sudo apt-get update
+  sudo apt-get install -y jq
+fi
 
 cat <<EOF > .env
 INFLUX_USER=$(read_value .influx.user)
