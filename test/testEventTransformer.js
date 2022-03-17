@@ -115,10 +115,26 @@ describe('eventTransformer.toInfluxEvent', function () {
 
       expect(shutterState).to.eql({
         fields: {
-          title: 'Window in Bad unten is closed',
           value: 'CLOSED'
         },
         measurement: 'bosch_ShutterContact',
+        tags: {
+          deviceId: 'hdm:HomeMaticIP:3014F711A000009D58589716',
+          name: 'Door/window contact',
+          roomName: 'Bad unten'
+        }
+      })
+    })
+
+    it('maps shutter annotations', function () {
+      const shutterState = findPoint('hdm:HomeMaticIP:3014F711A000009D58589716', 'bosch_ShutterAnnotation')
+
+      expect(shutterState).to.eql({
+        fields: {
+          title: 'Window in Bad unten is closed',
+          value: 'CLOSED'
+        },
+        measurement: 'bosch_ShutterAnnotation',
         tags: {
           deviceId: 'hdm:HomeMaticIP:3014F711A000009D58589716',
           name: 'Door/window contact',
