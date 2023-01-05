@@ -1,9 +1,22 @@
-const { update: boschUpdate } = require('./lib/bosch/updater')
-const { update: airthingsUpdate } = require('./lib/airthings/airthingsUpdater')
-const { update: yrUpdate } = require('./lib/yr/updater')
-const { update: dmiUpdate } = require('./lib/dmi/updater')
+const boschService = require('./lib/bosch/updater')
+const airthingsService = require('./lib/airthings/airthingsUpdater')
+const yrService = require('./lib/yr/updater')
+const dmiService = require('./lib/dmi/updater')
 
-boschUpdate()
-airthingsUpdate()
-yrUpdate()
-dmiUpdate()
+const services = [
+  boschService,
+  airthingsService,
+  yrService,
+  dmiService
+]
+
+for (const service of services) {
+  service.start()
+}
+
+process.on('SIGINT', async function () {
+  for (const service of services) {
+    await service.stop()
+  }
+  process.exit(0)
+})
