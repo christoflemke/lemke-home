@@ -8,3 +8,4 @@ experiments/*
 script/deploy.sh
 types/*.validator.js
 types/*.validator.ts
+upload
