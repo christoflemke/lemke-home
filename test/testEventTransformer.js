@@ -1,4 +1,4 @@
-const eventTransformer = require('../lib/bosch/eventTransform')
+const eventTransformer = require('../services/bosch/eventTransform')
 const expect = require('chai').expect
 const { readFixture } = require('./helpers/readFixture')
 

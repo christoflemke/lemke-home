@@ -1,15 +1,36 @@
 version: '2'
 services:
 
-  poll:
+  base:
     build:
       context: .
     image: node-poll
-    restart: unless-stopped
+    restart: on-failure
     volumes:
       - ./config:/app/config
     environment:
       - NODE_ENV=docker
+    command: /bin/true
+
+  bosch:
+    extends:
+      service: base
+    command: 'node /app/services/bosch/updater.js'
+
+  airthings:
+    extends:
+      service: base
+    command: 'node /app/services/airthings/airthingsUpdater.js'
+
+  dmi:
+    extends:
+      service: base
+    command: 'node /app/services/dmi/updater.js'
+
+  yr:
+    extends:
+      service: base
+    command: 'node /app/services/yr/updater.js'
 
   influxdb:
     image: influxdb:1.7.11

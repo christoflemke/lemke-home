@@ -1,6 +1,6 @@
 const client = require('./dmiClient')
-const configuration = require('../config')
-const { influx } = require('../influx')
+const configuration = require('../../lib/config')
+const { influx } = require('../../lib/influx')
 const { observationsToPoints } = require('./dmiEventMapper')
 /**
  * @return {Promise<Station>}
@@ -84,12 +84,4 @@ async function main () {
   }
 }
 
-/**
- * @type {DataService}
- */
-const service = {
-  start: main,
-  stop: () => {
-  }
-}
-module.exports = service
+main()

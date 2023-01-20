@@ -2,8 +2,8 @@ const boschClient = require('./boschClient')
 const fs = require('fs')
 const util = require('util')
 const appendFile = util.promisify(fs.appendFile)
-const { influx } = require('../influx')
-const eventTransformer = require('../bosch/eventTransform')
+const { influx } = require('../../lib/influx')
+const eventTransformer = require('./eventTransform')
 
 let pollId = 'null'
 let stopPoll = false
@@ -55,6 +55,7 @@ async function longPoll (serviceToPoints) {
  * @return {Promise<void>}
  */
 async function stop () {
+  console.log('stopping bosch service')
   stopPoll = true
   console.log('Unsubscribe')
   try {
@@ -93,6 +94,7 @@ async function fetchDeviceState (serviceToPoints) {
 }
 
 async function start () {
+  console.log('starting bosch service')
   try {
     const { rooms, devices } = await refreshData()
     const {
@@ -120,12 +122,9 @@ async function start () {
   }
 }
 
-/**
- * @type {DataService}
- */
-const service = {
-  start,
-  stop
-}
+start()
 
-module.exports = service
+process.on('SIGINT', async function () {
+  stop()
+  process.exit(0)
+})

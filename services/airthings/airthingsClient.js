@@ -1,4 +1,4 @@
-const config = require('../config').airthings
+const config = require('../../lib/config').airthings
 const axios = require('axios').default
 
 /**

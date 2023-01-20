@@ -1,5 +1,5 @@
 const axios = require('axios').default
-const config = require('../config').dmi
+const config = require('../../lib/config').dmi
 
 const headers = {
   'User-Agents': config.client_id

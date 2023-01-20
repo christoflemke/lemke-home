@@ -1,6 +1,6 @@
-const config = require('../config').airthings
+const config = require('../../lib/config').airthings
 const parser = require('./airthingsParser')
-const { influx } = require('../influx')
+const { influx } = require('../../lib/influx')
 
 const client = require('./airthingsClient')
 
@@ -42,12 +42,4 @@ async function update () {
   setInterval(iterate, config.intervalSeconds * 1000)
 }
 
-/**
- * @type {DataService}
- */
-const service = {
-  start: update,
-  stop: () => {}
-}
-
-module.exports = service
+update()

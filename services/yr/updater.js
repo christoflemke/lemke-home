@@ -1,7 +1,7 @@
 const { getForecastCached } = require('./yrClient')
 const { yrForcastToIPoints } = require('./yrEventMapper')
-const { influx } = require('../influx')
-const config = require('../config').yr
+const { influx } = require('../../lib/influx')
+const config = require('../../lib/config').yr
 
 async function update () {
   async function iterate () {

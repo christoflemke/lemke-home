@@ -1,4 +1,4 @@
-const csv = require('./lib/fjernvarme/reader')
+const csv = require('./reader')
 const { opendir } = require('node:fs/promises')
 const path = require('path')
 

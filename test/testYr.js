@@ -1,8 +1,8 @@
-const client = require('../lib/yr/yrClient')
+const client = require('../services/yr/yrClient')
 const nock = require('nock')
 const config = require('../lib/config').yr
 const { expect } = require('chai')
-const { yrForcastToIPoints } = require('../lib/yr/yrEventMapper')
+const { yrForcastToIPoints } = require('../services/yr/yrEventMapper')
 const { readFixture } = require('./helpers/readFixture')
 
 nock.disableNetConnect()

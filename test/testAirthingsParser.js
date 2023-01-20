@@ -1,4 +1,4 @@
-const parser = require('../lib/airthings/airthingsParser')
+const parser = require('../services/airthings/airthingsParser')
 const fs = require('fs')
 const path = require('path')
 const { expect } = require('chai')

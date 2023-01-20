@@ -10,6 +10,5 @@ FROM $image
 RUN mkdir -p /app/config
 WORKDIR /app
 COPY --from=node_modules /app/node_modules /app/node_modules
-COPY index.js /app
+COPY services /app/services
 COPY lib /app/lib
-CMD node /app/index.js

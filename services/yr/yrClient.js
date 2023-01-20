@@ -1,4 +1,4 @@
-const config = require('../config').yr
+const config = require('../../lib/config').yr
 const axios = require('axios').default
 
 const axiosOptions = {

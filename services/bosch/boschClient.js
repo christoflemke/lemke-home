@@ -1,6 +1,6 @@
 const axios = require('axios').default
 const https = require('https')
-const config = require('../config').bosch
+const config = require('../../lib/config').bosch
 const fs = require('fs')
 const path = require('path')
 

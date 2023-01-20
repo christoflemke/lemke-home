@@ -1,6 +1,6 @@
 const { expect } = require('chai')
 const { readFixture } = require('./helpers/readFixture')
-const { observationsToPoints } = require('../lib/dmi/dmiEventMapper')
+const { observationsToPoints } = require('../services/dmi/dmiEventMapper')
 
 describe('dmi', function () {
   const points = observationsToPoints(readFixture('dmiObservations'))

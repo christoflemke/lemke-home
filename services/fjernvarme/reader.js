@@ -1,6 +1,6 @@
 const fs = require('fs')
 const readline = require('readline')
-const {influx} = require('../influx')
+const {influx} = require('../../lib/influx')
 
 async function linesToPoints(lines) {
   console.log('on close')
