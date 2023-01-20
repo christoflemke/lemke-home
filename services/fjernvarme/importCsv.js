@@ -3,7 +3,7 @@ const { opendir } = require('node:fs/promises')
 const path = require('path')
 
 async function readAll() {
-  const uploadPath = path.resolve(path.join(__dirname, 'upload'));
+  const uploadPath = path.resolve(path.join(__dirname, '..', '..', 'upload'));
   const dir = await opendir(uploadPath)
   const fileNames = []
   for await (const dirent of dir) {
