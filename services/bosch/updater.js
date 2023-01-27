@@ -2,50 +2,37 @@ const boschClient = require('./boschClient')
 const fs = require('fs')
 const util = require('util')
 const appendFile = util.promisify(fs.appendFile)
-const { influx } = require('../../lib/influx')
+const {influx} = require('../../lib/influx')
 const eventTransformer = require('./eventTransform')
 
 let pollId = 'null'
 let stopPoll = false
 
-async function sleep (ms) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms)
-  })
-}
-
 /**
  * @param {function(Service): InfluxPoint[]} serviceToPoints
  * @return {Promise<void>}
  */
-async function longPoll (serviceToPoints) {
-  let retries = 0
+async function longPoll(serviceToPoints) {
   while (!stopPoll) { // eslint-disable-line
     console.log('setting up poll')
-    retries++
     pollId = await boschClient.setupPoll()
 
-    try {
-      while (true) {
-        const events = await boschClient.longPoll(pollId)
-        retries = 1
-        // console.log(`events: ${JSON.stringify(events)}`)
 
-        await appendFile('event.log', `${JSON.stringify({
-          time: new Date(),
-          events
-        })}\n`)
+    while (true) {
+      const events = await boschClient.longPoll(pollId)
+      // console.log(`events: ${JSON.stringify(events)}`)
 
-        const points = events.flatMap(serviceToPoints)
+      await appendFile('event.log', `${JSON.stringify({
+        time: new Date(),
+        events
+      })}\n`)
 
-        if (points.length > 0) {
-          await influx.writePoints(points)
-          console.log(`bosch->influx ${JSON.stringify(points)}`)
-        }
+      const points = events.flatMap(serviceToPoints)
+
+      if (points.length > 0) {
+        await influx.writePoints(points)
+        console.log(`bosch->influx ${JSON.stringify(points)}`)
       }
-    } catch (e) {
-      console.log(`Error in long poll ${e}`)
-      await sleep(10000 * retries)
     }
   }
   console.log('No more retries left, giving up')
@@ -54,7 +41,7 @@ async function longPoll (serviceToPoints) {
 /**
  * @return {Promise<void>}
  */
-async function stop () {
+async function stop() {
   console.log('stopping bosch service')
   stopPoll = true
   console.log('Unsubscribe')
@@ -71,7 +58,7 @@ async function stop () {
 /**
  * @return {Promise<{rooms: Room[], devices: Device[]}>}
  */
-async function refreshData () {
+async function refreshData() {
   const devices = await boschClient.fetchDevices()
   const rooms = await boschClient.fetchRooms()
   return {
@@ -83,7 +70,7 @@ async function refreshData () {
  * @param {function(Service): InfluxPoint[]} serviceToPoints
  * @return {Promise<void>}
  */
-async function fetchDeviceState (serviceToPoints) {
+async function fetchDeviceState(serviceToPoints) {
   const services = await boschClient.fetchServices()
   // Filter out annotations
   const points = services.flatMap(serviceToPoints).filter(p => p.measurement !== 'bosch_ShutterAnnotation')
@@ -93,38 +80,42 @@ async function fetchDeviceState (serviceToPoints) {
   }
 }
 
-async function start () {
+async function update() {
   console.log('starting bosch service')
+  const {rooms, devices} = await refreshData()
+  const {
+    serviceToPoints
+  } = eventTransformer(devices, rooms)
+  console.log(`Devices: ${JSON.stringify(devices)}`)
   try {
-    const { rooms, devices } = await refreshData()
-    const {
-      serviceToPoints
-    } = eventTransformer(devices, rooms)
-    console.log(`Devices: ${JSON.stringify(devices)}`)
-    try {
-      await fetchDeviceState(serviceToPoints)
-      const fiveMinutes = 5 * 60 * 1000
-      setInterval(async function () {
-        try {
-          await fetchDeviceState(serviceToPoints)
-        } catch (e) {
-          console.error(`Failed to fetch device state: ${e}`)
-        }
-      }, fiveMinutes)
-      await longPoll(serviceToPoints)
-    } catch (e) {
-      console.error(e)
-    } finally {
-      await stop()
-    }
+    await fetchDeviceState(serviceToPoints)
+    const fiveMinutes = 5 * 60 * 1000
+    setInterval(async function () {
+      try {
+        await fetchDeviceState(serviceToPoints)
+      } catch (e) {
+        console.error(`Failed to fetch device state: ${e}`)
+        process.exit(1)
+      }
+    }, fiveMinutes)
+    await longPoll(serviceToPoints)
+  } finally {
+    await stop()
+  }
+}
+
+async function start() {
+  try {
+    await update()
   } catch (e) {
-    console.log(`Failed to fetch devices: ${e}`)
+    console.error(e)
+    process.exit(1)
   }
 }
 
 start()
 
 process.on('SIGINT', async function () {
-  stop()
+  await stop()
   process.exit(0)
 })

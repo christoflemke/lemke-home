@@ -1,23 +1,24 @@
 const client = require('./dmiClient')
 const configuration = require('../../lib/config')
-const { influx } = require('../../lib/influx')
-const { observationsToPoints } = require('./dmiEventMapper')
+const {influx} = require('../../lib/influx')
+const {observationsToPoints} = require('./dmiEventMapper')
+
 /**
  * @return {Promise<Station>}
  */
-async function findNearestStation () {
+async function findNearestStation() {
   const delta = 0.3
   const lon1 = configuration.yr.lon - delta
   const lon2 = configuration.yr.lon + delta
   const lat1 = configuration.yr.lat - delta
   const lat2 = configuration.yr.lat + delta
-  const stations = await client.getStations({ bbox: `${lon1},${lat1},${lon2},${lat2}` })
+  const stations = await client.getStations({bbox: `${lon1},${lat1},${lon2},${lat2}`})
 
   /**
    * @param {Station} station
    * @return {number} distance
    */
-  function distance (station) {
+  function distance(station) {
     const lon = station.geometry.coordinates[0]
     const lat = station.geometry.coordinates[1]
     return Math.sqrt(Math.pow(lon - configuration.yr.lon, 2) + Math.pow(lat - configuration.yr.lat, 2))
@@ -49,39 +50,41 @@ async function findNearestStation () {
  * @param {Station} station
  * @return {Promise<ObservationCollection>}
  */
-async function getObservations (station) {
+async function getObservations(station) {
   return await client.getObservations({
     station: station.properties.stationId
   })
 }
 
-async function main () {
-  try {
-    const station = await findNearestStation()
+async function update() {
+  const station = await findNearestStation()
 
-    async function iterate () {
-      console.log('update from dmi')
-      try {
-        const observations = await getObservations(station)
-        const points = observationsToPoints(observations)
-        if (points.length > 0) {
-          await influx.writePoints(points)
-          console.log(`dmi->influx: ${JSON.stringify(points)}`)
-        }
-      } catch (e) {
-        console.error(e)
-      }
-    }
-
+  async function iterate() {
+    console.log('update from dmi')
     try {
-      await iterate()
+      const observations = await getObservations(station)
+      const points = observationsToPoints(observations)
+      if (points.length > 0) {
+        await influx.writePoints(points)
+        console.log(`dmi->influx: ${JSON.stringify(points)}`)
+      }
     } catch (e) {
       console.error(e)
+      process.exit(1)
     }
-    setInterval(iterate, 5 * 60 * 1000)
+  }
+
+  await iterate()
+  setInterval(iterate, 5 * 60 * 1000)
+}
+
+async function start() {
+  try {
+    await update()
   } catch (e) {
     console.error(e)
+    process.exit(1)
   }
 }
 
-main()
+start()

@@ -1,10 +1,10 @@
 const config = require('../../lib/config').airthings
 const parser = require('./airthingsParser')
-const { influx } = require('../../lib/influx')
+const {influx} = require('../../lib/influx')
 
 const client = require('./airthingsClient')
 
-async function auth () {
+async function auth() {
   const token = await client.passwordToToken()
   console.log('password to token: success')
 
@@ -16,7 +16,7 @@ async function auth () {
   return tokenAuth
 }
 
-async function update () {
+async function update() {
   let accessToken = null
 
   const iterate = async function () {
@@ -30,16 +30,20 @@ async function update () {
       await influx.writePoints(points)
       console.log(`airthings->influx ${JSON.stringify(points)}`)
     } catch (e) {
-      if (e?.response?.status === 401) {
-        console.log('auth failed, deleting token')
-        accessToken = null
-      } else {
-        console.error(e)
-      }
+      console.error(e)
+      process.exit(1)
     }
   }
   await iterate()
   setInterval(iterate, config.intervalSeconds * 1000)
 }
 
-update()
+async function start() {
+  try {
+    await update()
+  } catch (e) {
+    console.error(e)
+    process.exit(1)
+  }
+}
+start()
