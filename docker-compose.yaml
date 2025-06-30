@@ -32,6 +32,11 @@ services:
       service: base
     command: 'node /app/services/yr/updater.js'
 
+  dclone:
+    extends:
+      service: base
+    command: 'node /app/services/dclone/updater.js'
+
   influxdb:
     image: influxdb:1.7.11
     volumes:
