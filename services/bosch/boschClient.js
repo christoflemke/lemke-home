@@ -11,7 +11,7 @@ function readPem (location) {
 const axiosOptions = {
   headers: {
     'Content-Type': 'application/json',
-    'api-version': '2.1'
+    'api-version': '3.14'
   },
   httpsAgent: new https.Agent({
     rejectUnauthorized: false,
