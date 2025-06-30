@@ -45,7 +45,7 @@ async function update() {
 async function start() {
   try {
       await update()
-      setInterval(update, 60 * 1000)
+      setInterval(update, 5 * 60 * 1000)
   } catch (e) {
     console.error(e)
     process.exit(1)
