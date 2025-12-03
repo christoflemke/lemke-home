@@ -1,4 +1,4 @@
-ARG image=node:18-bullseye
+ARG image=node:24-bullseye
 
 FROM $image AS node_modules
 RUN mkdir /app
