@@ -20,7 +20,7 @@ services:
   airthings:
     extends:
       service: base
-    command: 'node /app/services/airthings/airthingsUpdater.js'
+    command: 'node /app/services/airthings-api/airthingsApiUpdater.js'
 
   dmi:
     extends:

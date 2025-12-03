@@ -15,7 +15,8 @@
   "dependencies": {
     "axios": "^0.26.0",
     "getconfig": "^4.5.0",
-    "influx": "^5.9.3"
+    "influx": "^5.9.3",
+    "airthings-consumer-api": "^1"
   },
   "devDependencies": {
     "@types/chai": "^4.3.0",
