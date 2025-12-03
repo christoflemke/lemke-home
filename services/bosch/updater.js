@@ -1,7 +1,7 @@
 const boschClient = require('./boschClient')
-const fs = require('fs')
-const util = require('util')
-const appendFile = util.promisify(fs.appendFile)
+// const fs = require('fs')
+// const util = require('util')
+// const appendFile = util.promisify(fs.appendFile)
 const {influx} = require('../../lib/influx')
 const eventTransformer = require('./eventTransform')
 
@@ -22,10 +22,10 @@ async function longPoll(serviceToPoints) {
       const events = await boschClient.longPoll(pollId)
       // console.log(`events: ${JSON.stringify(events)}`)
 
-      await appendFile('event.log', `${JSON.stringify({
-        time: new Date(),
-        events
-      })}\n`)
+      // await appendFile('event.log', `${JSON.stringify({
+      //   time: new Date(),
+      //   events
+      // })}\n`)
 
       const points = events.flatMap(serviceToPoints)
 
