@@ -5,9 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha test/test*.js",
-    "lint:fix": "ts-standard --fix",
-    "lint": "ts-standard",
-    "pretest": "npm run lint:fix && tsc",
+    "pretest": "tsc",
     "validate-config": "typescript-json-validator types/config.d.ts Configuration && tsc types/config.d.validator.ts && node ./script/validate-config.js"
   },
   "author": "Christof Lemke <christoflemke@npmjs.com>",
@@ -27,7 +25,6 @@
     "chai-as-promised": "^7.1.1",
     "mocha": "^9.2.1",
     "nock": "^13.2.4",
-    "ts-standard": "^11.0.0",
     "typescript": "^4.6.2"
   },
   "ts-standard": {
