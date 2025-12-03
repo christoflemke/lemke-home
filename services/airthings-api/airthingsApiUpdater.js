@@ -1,7 +1,6 @@
 const {AirthingsClient, SensorUnits} = require("airthings-consumer-api");
 const config = require('../../lib/config').airthings_api
 const {influx} = require('../../lib/influx')
-const {observationsToPoints} = require("../dmi/dmiEventMapper");
 
 async function sample() {
   if (!config.clientId) {
@@ -33,6 +32,8 @@ async function sample() {
       },
       fields
     }
+    const room = config.devices[device.serialNumber]
+    point.tags["room"] = room
     console.log(`Sending: ${JSON.stringify(point)}`)
     influx.writePoints([point])
   }
