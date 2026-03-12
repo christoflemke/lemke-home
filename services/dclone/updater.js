@@ -2,7 +2,7 @@ const axios = require('axios').default
 
 const {influx} = require('../../lib/influx')
 
-const D2IO_URL = 'https://diablo2.io/dclone_api.php'
+const D2IO_URL = 'https://diablo2.io/dclone_api.php?ver=2'
 
 const REGIONS = {
     1: 'America',
@@ -20,17 +20,23 @@ const LEAGUES = {
     2: 'Non-Ladder'
 };
 
+const VERSIONS = {
+    1: 'LoD',
+    2: 'RotW'
+};
+
 async function update() {
     console.log('Fetching DClone data...')
     const {data} = await axios.get(D2IO_URL)
     console.log(`Fetched ${data.length} entries`)
-    const influxPoints = data.map(({progress, region, hc, ladder}) => {
+    const influxPoints = data.map(({progress, region, hc, ladder, ver}) => {
         return {
             measurement: `dclone`,
             tags: {
                 region: REGIONS[region] || 'Unknown',
                 hardcore: MODES[hc] || 'Unknown',
                 ladder: LEAGUES[ladder] || 'Unknown',
+                version: VERSIONS[ver] || 'Unknown'
             },
             fields: {
                 progress: Number(progress) || -1
