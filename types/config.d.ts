@@ -34,6 +34,7 @@ interface DmiConfig {
 interface Configuration {
   yr: YrConfig
   airthings: AirthingsConfig
+  airthings_api: any
   influx: InfluxConfig
   bosch: BoschConfig
   dmi: DmiConfig

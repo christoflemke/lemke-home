@@ -1,17 +1,17 @@
-const {AirthingsClient, SensorUnits} = require("airthings-consumer-api");
-const config = require('../../lib/config').airthings_api
-const {influx} = require('../../lib/influx')
+import {AirthingsClient, SensorUnits} from "airthings-consumer-api";
+import config from "../../lib/config.ts";
+import {influx} from "../../lib/influx.ts";
 
 async function sample() {
-  if (!config.clientId) {
+  if (!config.airthings_api.clientId) {
     throw new Error("Missing clientId")
   }
-  if (!config.clientSecret) {
+  if (!config.airthings_api.clientSecret) {
     throw new Error("Missing clientSecret")
   }
   const airthingsClient = new AirthingsClient({
-    clientId: config.clientId,
-    clientSecret: config.clientSecret
+    clientId: config.airthings_api.clientId,
+    clientSecret: config.airthings_api.clientSecret
   });
   const response = await airthingsClient.getSensors(SensorUnits.Metric)
   const devices = response.results
@@ -32,7 +32,7 @@ async function sample() {
       },
       fields
     }
-    const room = config.devices[device.serialNumber]
+    const room = config.airthings_api.devices[device.serialNumber]
     point.tags["room"] = room
     console.log(`Sending: ${JSON.stringify(point)}`)
     influx.writePoints([point])

@@ -1,6 +1,7 @@
-const axios = require('axios').default
+import axios from "axios";
+import {influx} from "../../lib/influx";
+import process from "node:process";
 
-const {influx} = require('../../lib/influx')
 
 const D2IO_URL = 'https://diablo2.io/dclone_api.php?ver=2'
 
@@ -58,4 +59,7 @@ async function start() {
   }
 }
 
-start()
+start().catch((err: any) => {
+    console.error(err)
+    process.exit(1)
+})

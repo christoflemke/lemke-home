@@ -1,9 +1,10 @@
-const client = require('../services/yr/yrClient')
-const nock = require('nock')
-const config = require('../lib/config').yr
-const { expect } = require('chai')
-const { yrForcastToIPoints } = require('../services/yr/yrEventMapper')
-const { readFixture } = require('./helpers/readFixture')
+import {clearCache, getForecastCached} from "../services/yr/yrClient.ts";
+import nock from "nock";
+import config from "../lib/config.ts";
+import {expect} from "chai";
+import {yrForcastToIPoints} from "../services/yr/yrEventMapper.ts";
+import {readFixture} from "./helpers/readFixture.ts";
+import {it} from "mocha";
 
 nock.disableNetConnect()
 describe('yr', function () {
@@ -21,7 +22,7 @@ describe('yr', function () {
       expires = new Date(),
       status = 200,
       body = { foo: 'bar' }
-    } = {}) {
+    }: any) {
       return nock('https://api.met.no', {
         reqheaders: {
           'User-Agent': 'https://github.com/christoflemke/lemke-home',
@@ -30,9 +31,9 @@ describe('yr', function () {
       })
         .get('/weatherapi/locationforecast/2.0/compact')
         .query({
-          lat: config.lat,
-          altitude: config.altitude,
-          lon: config.lon
+          lat: config.yr.lat,
+          altitude: config.yr.altitude,
+          lon: config.yr.lon
         })
         .times(times)
         .reply(status, body, {
@@ -41,12 +42,12 @@ describe('yr', function () {
         })
     }
 
-    beforeEach(client.clearCache)
+    beforeEach(clearCache)
 
     it('fetches the weather forecast', async function () {
-      const scope = mockResponse()
+      const scope = mockResponse({})
 
-      const response = await client.getForecastCached()
+      const response = await getForecastCached()
 
       expect(response).to.eql({ foo: 'bar' })
       scope.done()
@@ -57,8 +58,8 @@ describe('yr', function () {
         expires: new Date(new Date().getTime() + 60 * 1000)
       })
 
-      await client.getForecastCached()
-      const response = await client.getForecastCached()
+      await getForecastCached()
+      const response = await getForecastCached()
 
       expect(response).to.eql({ foo: 'bar' })
       scope.done()
@@ -70,8 +71,8 @@ describe('yr', function () {
         expires: new Date(new Date().getTime() - 60 * 1000)
       })
 
-      await client.getForecastCached()
-      const response = await client.getForecastCached()
+      await getForecastCached()
+      const response = await getForecastCached()
 
       expect(response).to.eql({ foo: 'bar' })
       scope.done()
@@ -81,13 +82,13 @@ describe('yr', function () {
       const scope1 = mockResponse({
         expires: new Date(new Date().getTime() - 60 * 1000)
       })
-      await client.getForecastCached()
+      await getForecastCached()
       const scope2 = mockResponse({
         expires: new Date(new Date().getTime() - 60 * 1000),
         status: 304,
         body: ''
       })
-      const response = await client.getForecastCached()
+      const response = await getForecastCached()
 
       expect(response).to.eql({ foo: 'bar' })
       scope1.done()

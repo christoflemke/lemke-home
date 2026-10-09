@@ -1,9 +1,7 @@
-const boschClient = require('./boschClient')
-// const fs = require('fs')
-// const util = require('util')
-// const appendFile = util.promisify(fs.appendFile)
-const {influx} = require('../../lib/influx')
-const eventTransformer = require('./eventTransform')
+import boschClient from "./boschClient.ts";
+import {influx} from "../../lib/influx.ts";
+import eventTransformer from "./eventTransform.ts";
+import process from "node:process";
 
 let pollId = 'null'
 let stopPoll = false
@@ -113,7 +111,10 @@ async function start() {
   }
 }
 
-start()
+start().catch((err: any) => {
+  console.error(err)
+  process.exit(1)
+})
 
 process.on('SIGINT', async function () {
   await stop()

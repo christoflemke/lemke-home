@@ -1,5 +1,5 @@
-const config = require('../../lib/config').yr
-const axios = require('axios').default
+import config from "../../lib/config.ts";
+import axios from "axios";
 
 const axiosOptions = {
   headers: {
@@ -9,8 +9,10 @@ const axiosOptions = {
 }
 
 // curl -i -X GET --header 'Accept: application/json' 'https://api.met.no/weatherapi/locationforecast/2.0/compact?altitude=76&lat=56.1689&lon=10.1651'
-async function getForecast (headers) {
-  const response = await axios.get(`https://api.met.no/weatherapi/locationforecast/2.0/compact?altitude=${config.altitude}&lat=${config.lat}&lon=${config.lon}`, {
+async function getForecast (headers?: any) {
+  const response =
+    await axios.get(
+      `https://api.met.no/weatherapi/locationforecast/2.0/compact?altitude=${config.yr.altitude}&lat=${config.yr.lat}&lon=${config.yr.lon}`, {
     headers: {
       ...axiosOptions.headers,
       ...headers
@@ -23,13 +25,19 @@ async function getForecast (headers) {
   }
 }
 
-let state = null
+type StateType = {
+  headers: any
+  body: YrForecast
+  status: number
+}
+
+let state: StateType|null = null
 
 /**
  *
  * @return {Promise<YrForecast>}
  */
-async function getForecastCached () {
+export async function getForecastCached () {
   if (state === null) {
     console.log('yr: fetch initial forecast')
     const response = await getForecast()
@@ -42,10 +50,9 @@ async function getForecastCached () {
   if (new Date(state.headers.expires) < new Date()) {
     console.log('yr: update forecast')
     try {
-      const response = await getForecast({
+      state = await getForecast({
         'If-Modified-Since': state.headers['last-modified']
       })
-      state = response
     } catch (e) {
       if (e?.response?.status === 304) {
         console.log('yr: forecast not modified')
@@ -54,14 +61,13 @@ async function getForecastCached () {
       }
     }
   }
-  return state.body
+  if (state) {
+    return state.body
+  } else {
+    throw new Error("state is null")
+  }
 }
 
-function clearCache () {
+export function clearCache () {
   state = null
-}
-
-module.exports = {
-  getForecastCached,
-  clearCache
 }

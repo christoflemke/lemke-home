@@ -1,7 +1,9 @@
-const client = require('./dmiClient')
-const configuration = require('../../lib/config')
-const {influx} = require('../../lib/influx')
-const {observationsToPoints} = require('./dmiEventMapper')
+import client from "./dmiClient.ts";
+import configuration from "../../lib/config.ts";
+import {influx} from "../../lib/influx.ts";
+import {observationsToPoints} from "./dmiEventMapper.ts";
+import * as process from "node:process";
+
 
 /**
  * @return {Promise<Station>}
@@ -12,7 +14,7 @@ async function findNearestStation() {
   const lon2 = configuration.yr.lon + delta
   const lat1 = configuration.yr.lat - delta
   const lat2 = configuration.yr.lat + delta
-  const stations = await client.getStations({bbox: `${lon1},${lat1},${lon2},${lat2}`})
+  const stations = await client.getStations(`${lon1},${lat1},${lon2},${lat2}`)
 
   /**
    * @param {Station} station
@@ -24,7 +26,7 @@ async function findNearestStation() {
     return Math.sqrt(Math.pow(lon - configuration.yr.lon, 2) + Math.pow(lat - configuration.yr.lat, 2))
   }
 
-  const valid = []
+  const valid: Station[] = []
   for (const station of stations.features) {
     if (station.properties.operationTo) {
       console.log(`operationTo: ${station.properties.operationTo}`)
@@ -45,15 +47,8 @@ async function findNearestStation() {
   return sorted[0]
 }
 
-/**
- *
- * @param {Station} station
- * @return {Promise<ObservationCollection>}
- */
-async function getObservations(station) {
-  return await client.getObservations({
-    station: station.properties.stationId
-  })
+async function getObservations(station: Station): Promise<ObservationCollection> {
+  return await client.getObservations(station.properties.stationId)
 }
 
 async function update() {
@@ -79,12 +74,10 @@ async function update() {
 }
 
 async function start() {
-  try {
-    await update()
-  } catch (e) {
-    console.error(e)
-    process.exit(1)
-  }
+  await update()
 }
 
-start()
+start().catch((err: any) => {
+  console.error(err)
+  process.exit(1)
+})

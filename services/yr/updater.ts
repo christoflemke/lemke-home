@@ -1,7 +1,7 @@
-const { getForecastCached } = require('./yrClient')
-const { yrForcastToIPoints } = require('./yrEventMapper')
-const { influx } = require('../../lib/influx')
-const config = require('../../lib/config').yr
+import {getForecastCached} from "./yrClient.ts";
+import {yrForcastToIPoints} from "./yrEventMapper.ts";
+import {influx } from "../../lib/influx.ts";
+import config from "../../lib/config.ts";
 
 async function update () {
   async function iterate () {
@@ -19,6 +19,6 @@ async function update () {
   }
 
   await iterate()
-  setInterval(iterate, config.interval)
+  setInterval(iterate, config.yr.interval)
 }
 update()

@@ -3,7 +3,7 @@
  * @param {YrForecast} yrForecast
  * @return {InfluxPoint[]}
  */
-function yrForcastToIPoints (yrForecast) {
+export function yrForcastToIPoints (yrForecast) {
   const first = yrForecast.properties.timeseries[0]
   const data = first.data.instant.details
   return [{
@@ -11,8 +11,4 @@ function yrForcastToIPoints (yrForecast) {
     fields: data,
     tags: {}
   }]
-}
-
-module.exports = {
-  yrForcastToIPoints
 }

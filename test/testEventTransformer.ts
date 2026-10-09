@@ -1,6 +1,8 @@
-const eventTransformer = require('../services/bosch/eventTransform')
-const expect = require('chai').expect
-const { readFixture } = require('./helpers/readFixture')
+import eventTransformer from "../services/bosch/eventTransform.ts";
+import {expect} from "chai";
+import {readFixture} from "./helpers/readFixture.ts";
+import {it} from "mocha";
+
 
 describe('eventTransformer.toInfluxEvent', function () {
   const devices = readFixture('devices')

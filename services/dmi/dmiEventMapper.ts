@@ -1,8 +1,4 @@
-/**
- * @param {Observation[]} stationFeatures
- * @return {InfluxPoint}
- */
-function featuresToPoint (stationFeatures) {
+function featuresToPoint (stationFeatures: Observation[]): InfluxPoint {
   const params = new Set(stationFeatures.map(f => f.properties.parameterId))
   const fields = {}
   for (const param of params) {
@@ -12,10 +8,7 @@ function featuresToPoint (stationFeatures) {
       .sort((a, b) => new Date(b.observed).getTime() - new Date(a.observed).getTime())
     fields[param] = sortedProps[0].value
   }
-  /**
-   * @type {InfluxPoint}
-   */
-  const point = {
+  const point: InfluxPoint = {
     measurement: 'dmi_stationData',
     tags: {
       stationId: stationFeatures[0].properties.stationId,
@@ -28,22 +21,13 @@ function featuresToPoint (stationFeatures) {
   return point
 }
 
-/**
- *
- * @param {ObservationCollection} observations
- * @return {InfluxPoint[]}
- */
-function observationsToPoints (observations) {
+export function observationsToPoints (observations: ObservationCollection): InfluxPoint[] {
   const stations = new Set(observations.features.map(f => f.properties.stationId))
-  const points = []
+  const points: InfluxPoint[] = []
   for (const station of stations) {
     const stationFeatures = observations.features.filter(f => f.properties.stationId === station)
     const point = featuresToPoint(stationFeatures)
     points.push(point)
   }
   return points
-}
-
-module.exports = {
-  observationsToPoints
 }

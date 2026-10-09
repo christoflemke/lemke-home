@@ -1,11 +1,12 @@
-const axios = require('axios').default
-const https = require('https')
-const config = require('../../lib/config').bosch
-const fs = require('fs')
-const path = require('path')
+import axios from "axios";
+import https from "https";
+import config from "../../lib/config.ts";
+import fs from "fs";
+import path from 'path';
+const __dirname = path.resolve();
 
 function readPem (location) {
-  return fs.readFileSync(path.join(__dirname, '..', '..', location), { encoding: 'ascii' }).toString()
+  return fs.readFileSync(path.join(__dirname, location), { encoding: 'ascii' }).toString()
 }
 
 const axiosOptions = {
@@ -15,11 +16,11 @@ const axiosOptions = {
   },
   httpsAgent: new https.Agent({
     rejectUnauthorized: false,
-    cert: readPem(config.clientCertLocation),
-    key: readPem(config.clientKeyLocation)
+    cert: readPem(config.bosch.clientCertLocation),
+    key: readPem(config.bosch.clientKeyLocation)
   })
 }
-const baseUrl = config.baseUrl
+const baseUrl = config.bosch.baseUrl
 const remoteJsonRpcUrl = `${baseUrl}/remote/json-rpc`
 
 /**
@@ -120,7 +121,7 @@ async function fetchServices () {
   return response.data
 }
 
-module.exports = {
+export default {
   longPoll,
   unsubscribe,
   setupPoll,

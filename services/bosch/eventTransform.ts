@@ -6,7 +6,7 @@
  *   serviceToPoints: function(Service): InfluxPoint[]
  * }}
  */
-module.exports = function (devices, rooms) {
+export default function (devices, rooms) {
   const roomToRoomName = {}
   for (const room of rooms) {
     roomToRoomName[room.id] = room.name

@@ -1,8 +1,11 @@
-const nock = require('nock')
-const boschClient = require('../services/bosch/boschClient')
-const expect = require('chai').expect
-const baseUrl = require('../lib/config').bosch.baseUrl
-const { readFixture } = require('./helpers/readFixture')
+import nock from "nock";
+import boschClient from "../services/bosch/boschClient.ts";
+import {expect} from "chai";
+import config from "../lib/config.ts";
+import {readFixture} from "./helpers/readFixture.ts";
+import {it} from "mocha";
+const baseUrl = config.bosch.baseUrl
+
 nock.disableNetConnect()
 const reqheaders = {
   'Content-Type': 'application/json',
