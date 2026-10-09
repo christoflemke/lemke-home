@@ -15,27 +15,27 @@ services:
   bosch:
     extends:
       service: base
-    command: 'node /app/services/bosch/updater.js'
+    command: 'npx tsx /app/services/bosch/updater.ts'
 
   airthings:
     extends:
       service: base
-    command: 'node /app/services/airthings-api/airthingsApiUpdater.js'
-
-  dmi:
-    extends:
-      service: base
-    command: 'node /app/services/dmi/updater.js'
-
+    command: 'npx tsx /app/services/airthings-api/airthingsApiUpdater.ts'
+#
+#  dmi:
+#    extends:
+#      service: base
+#    command: 'npx tsx /app/services/dmi/updater.ts'
+#
   yr:
     extends:
       service: base
-    command: 'node /app/services/yr/updater.js'
+    command: 'npx tsx /app/services/yr/updater.ts'
 
   dclone:
     extends:
       service: base
-    command: 'node /app/services/dclone/updater.js'
+    command: 'npx tsx /app/services/dclone/updater.ts'
 
   influxdb:
     image: influxdb:1.7.11

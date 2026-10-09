@@ -7,7 +7,12 @@
   "scripts": {
     "test": "mocha test/test*.ts",
     "pretest": "tsc",
-    "validate-config": "typescript-json-validator types/config.d.ts Configuration && tsc types/config.d.validator.ts && node ./script/validate-config.js"
+    "validate-config": "typescript-json-validator types/config.d.ts Configuration && tsc types/config.d.validator.ts && node ./script/validate-config.js",
+    "airthings": "tsx ./services/airthings-api/airthingsApiUpdater.ts",
+    "bosch": "tsx ./services/bosch/updater.ts",
+    "yr": "tsx ./services/yr/updater.ts",
+    "dmi": "tsx ./services/dmi/updater.ts",
+    "dclone": "tsx ./services/dclone/updater.ts"
   },
   "author": "Christof Lemke <christoflemke@npmjs.com>",
   "license": "ISC",
@@ -15,7 +20,7 @@
     "airthings-consumer-api": "^1",
     "axios": "^1.13.2",
     "getconfig": "^4.5.0",
-    "influx": "^5.9.3"
+    "influx": "^5.12.0"
   },
   "devDependencies": {
     "@types/chai": "^4.3.0",

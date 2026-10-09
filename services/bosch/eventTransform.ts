@@ -1,12 +1,4 @@
-/**
- *
- * @param {Device[]} devices
- * @param {Room[]} rooms
- * @return {{
- *   serviceToPoints: function(Service): InfluxPoint[]
- * }}
- */
-export default function (devices, rooms) {
+export default function (devices: Device[], rooms: Room[]): { serviceToPoints: (e: Service) => InfluxPoint[] } {
   const roomToRoomName = {}
   for (const room of rooms) {
     roomToRoomName[room.id] = room.name
@@ -19,12 +11,7 @@ export default function (devices, rooms) {
     deviceToRoomName[device.id] = roomToRoomName[device.roomId]
   }
 
-  /**
-   *
-   * @param {Service} e
-   * @return {InfluxPoint[]}
-   */
-  function serviceToPoints (e) {
+  function serviceToPoints (e: Service): InfluxPoint[] {
     const {
       path,
       deviceId,
@@ -36,11 +23,10 @@ export default function (devices, rooms) {
       name = deviceId
     }
 
-    /**
-     * @param {any} value
-     * @return {InfluxPoint[]}
-     */
-    function createEvent (value) {
+    function createEvent (value?: string|number): InfluxPoint[] {
+      if (!value) {
+        return []
+      }
       return [{
         measurement: `bosch_${id}`,
         tags: { deviceId, name, roomName },
@@ -49,12 +35,13 @@ export default function (devices, rooms) {
     }
 
     switch (id) {
-      case 'TemperatureLevel':
-        return createEvent(e.state.temperature)
+      case 'TemperatureLevel': {
+        return createEvent(e?.state?.temperature)
+      }
       case 'ValveTappet':
-        return createEvent(e.state.position)
+        return createEvent(e?.state?.position)
       case 'RoomClimateControl':
-        return createEvent(e.state.setpointTemperature)
+        return createEvent(e?.state?.setpointTemperature)
       case 'ShutterContact':
         /**
          * ShutterContactState will always be collected
